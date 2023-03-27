@@ -7,9 +7,9 @@ $(document).ready(function() {
             let paragrafo = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis excepturi pariatur nisi odio! Sit temporibus illo vitae, distinctio suscipit accusantium tempora iste quasi atque, ipsa, corrupti quisquam recusandae nesciunt eum?";
             let data = ['04/06/2022', '28/05/2022', '21/05/2022']
             let texto = `
-            <div class="noticia3 w33">
+            <div class="noticia w33">
                 <div class="texto">
-                    <img src="images/Foto-${i}.JPG" alt="">
+                    <img src="images/foto-${i}.JPG" alt="">
                     <p>${data[i - 1]}</p>
                     <h2>${header}</h2>
                     <p>${paragrafo}</p>
