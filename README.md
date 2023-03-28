@@ -19,10 +19,11 @@ Após clonar o repositório, basta abrir o arquivo index.html em seu navegador d
 O site também pode ser acessado online no seguinte endereço: [Clique aqui](https://maikywilliam.github.io/Futbahs/)
 
 # Tecnologias utilizadas
-HTML
-CSS
-JavaScript
-Contribuição
+- HTML
+- CSS
+- JavaScript
+
+# Contribuição
 Contribuições são bem-vindas! Se você deseja contribuir com este projeto, basta fazer um fork deste repositório, realizar as alterações que deseja e enviar um pull request.
 
 # Licença
