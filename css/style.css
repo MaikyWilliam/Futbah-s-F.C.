@@ -202,10 +202,7 @@ h1.right-line {
 
 .elenco {
     display: flex;
-    flex-wrap: wrap;
-    /* overflow-y: scroll; */
     justify-content: center;
-
 }
 
 .jogador {
@@ -480,7 +477,8 @@ footer {
     }
 
     nav img {
-        max-width: 50px;
+        margin-top: -10px;
+        max-width: 25%;
     }
 
     nav ul {
@@ -536,6 +534,12 @@ footer {
         width: 98%;
         height: auto;
         margin: 2% auto;
+    }
+
+    .elenco {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: scroll;
     }
 
     /* Contato */

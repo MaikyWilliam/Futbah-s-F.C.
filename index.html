@@ -19,27 +19,35 @@
 
 <body>
     <header>
-        <nav>
-            <div class="logo" href="index.html">
-                <img src="images/Logo.png" alt="Logo do time">
-            </div>
-            <ul class="menu desktop">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#noticia">noticia</a></li>
-                <li><a href="#elenco">Elenco</a></li>
-                <li><a href="#rank">Rank</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-            <ul class="menu mobile">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#noticia">noticia</a></li>
-                <li><a href="#elenco">Elenco</a></li>
-                <li><a href="#rank">Rank</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+        <!-- <section class="container"> -->
+            <nav class="menu desktop" id="btn-menu">
+                <div class="logo" href="index.html">
+                    <img src="images/Logo.png" alt="Logo do time">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#noticia">noticia</a></li>
+                    <li><a href="#elenco">Elenco</a></li>
+                    <li><a href="#rank">Rank</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+
+            </nav>
+            <nav class="menu mobile" id="btn-mobile">
+                <div class="logo" href="index.html">
+                    <img src="images/Logo.png" alt="Logo do time">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#noticia">noticia</a></li>
+                    <li><a href="#elenco">Elenco</a></li>
+                    <li><a href="#rank">Rank</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        <!-- </section> -->
     </header>
 
     <main>
@@ -56,10 +64,12 @@
 
                 <!-- <h1 class="right-line">Elenco</h1> -->
                 <div class="jogador">
-                    <img src="images/Maiky.jpeg" alt="Foto do Maiky William">
-                    <h3>Maiky</h3>
-                    <p>Posição: Zagueiro</p>
-                    <p>Número: 11</p>
+                    <div class="btn-avancar-jogador">
+                        <img src="images/Maiky.jpeg" alt="Foto do Maiky William">
+                        <h3>Maiky</h3>
+                        <p>Posição: Zagueiro</p>
+                        <p>Número: 11</p>
+                    </div>
                 </div>
                 <div class="jogador">
                     <img src="images/Maiky.jpeg" alt="Foto do Maiky William">
@@ -179,7 +189,7 @@
         </section>
 
     </main>
-    
+
     <footer>
         <div class="footer-container">
             <div class="footer-info">
