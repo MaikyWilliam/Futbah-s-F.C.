@@ -24,7 +24,7 @@ $(document).ready(function () {
   })
 
   $(async function () {
-    const url = '../jogadroes/list_jogador.json';
+    const url = 'jogadroes/list_jogador.json';
 
     try {
       const response = await fetch(url);
