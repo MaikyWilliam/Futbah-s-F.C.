@@ -20,33 +20,33 @@
 <body>
     <header>
         <!-- <section class="container"> -->
-            <nav class="menu desktop" id="btn-menu">
-                <div class="logo" href="index.html">
-                    <img src="images/Logo.png" alt="Logo do time">
-                </div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#noticia">noticia</a></li>
-                    <li><a href="#elenco">Elenco</a></li>
-                    <li><a href="#rank">Rank</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
+        <nav class="menu desktop" id="btn-menu">
+            <div class="logo" href="index.html">
+                <img src="images/Logo.png" alt="Logo do time">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#noticia">noticia</a></li>
+                <li><a href="#elenco">Elenco</a></li>
+                <li><a href="#rank">Rank</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
 
-            </nav>
-            <nav class="menu mobile" id="btn-mobile">
-                <div class="logo" href="index.html">
-                    <img src="images/Logo.png" alt="Logo do time">
-                </div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#noticia">noticia</a></li>
-                    <li><a href="#elenco">Elenco</a></li>
-                    <li><a href="#rank">Rank</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
+        </nav>
+        <nav class="menu mobile" id="btn-mobile">
+            <div class="logo" href="index.html">
+                <img src="images/Logo.png" alt="Logo do time">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#noticia">noticia</a></li>
+                <li><a href="#elenco">Elenco</a></li>
+                <li><a href="#rank">Rank</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
         <!-- </section> -->
     </header>
 
@@ -59,96 +59,31 @@
 
         <section class="linha-elenco">
             <h1 class="right-line">Elenco</h1>
-
             <section id="elenco" class="elenco linha-elenco">
-
-                <!-- <h1 class="right-line">Elenco</h1> -->
-                <div class="jogador">
-                    <div class="btn-avancar-jogador">
-                        <img src="images/Maiky.jpeg" alt="Foto do Maiky William">
-                        <h3>Maiky</h3>
-                        <p>Posição: Zagueiro</p>
-                        <p>Número: 11</p>
-                    </div>
-                </div>
-                <div class="jogador">
-                    <img src="images/Maiky.jpeg" alt="Foto do Maiky William">
-                    <h3>Maiky</h3>
-                    <p>Posição: Zagueiro</p>
-                    <p>Número: 11</p>
-                </div>
-                <div class="jogador">
-                    <img src="images/Maiky.jpeg" alt="Foto do Maiky William">
-                    <h3>Maiky</h3>
-                    <p>Posição: Zagueiro</p>
-                    <p>Número: 11</p>
-                </div>
-                <div class="jogador">
-                    <img src="images/Maiky.jpeg" alt="Foto do Maiky William">
-                    <h3>Maiky</h3>
-                    <p>Posição: Zagueiro</p>
-                    <p>Número: 11</p>
-                </div>
             </section>
         </section>
 
         <section id="rank" class="rank">
             <h2>Classificação</h2>
-            <table>
+            <table id="classificacao">
                 <thead>
                     <tr>
                         <th>Posição</th>
                         <th>Nome do Jogador</th>
                         <th>Pontos</th>
+                        <th>Gols</th>
+                        <th>Assistencia</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr class="promoted">
+                <!-- <tbody> -->
+                    <!-- <tr class="promoted">
                         <td>1º</td>
                         <td>João Silva</td>
                         <td>25</td>
+                        <td>15</td>
+                        <td>10</td>
                     </tr>
-                    <tr class="promoted">
-                        <td>2º</td>
-                        <td>Maria Santos</td>
-                        <td>23</td>
-                    </tr>
-                    <tr class="promoted">
-                        <td>3º</td>
-                        <td>Antônio Souza</td>
-                        <td>21</td>
-                    </tr>
-                    <tr class="promoted">
-                        <td>4º</td>
-                        <td>Luiza Almeida</td>
-                        <td>19</td>
-                    </tr>
-                    <tr>
-                        <td>...</td>
-                        <td>...</td>
-                        <td>...</td>
-                    </tr>
-                    <tr class="relegated">
-                        <td>12º</td>
-                        <td>Roberto Ferreira</td>
-                        <td>7</td>
-                    </tr>
-                    <tr class="relegated">
-                        <td>13º</td>
-                        <td>Carla Ribeiro</td>
-                        <td>6</td>
-                    </tr>
-                    <tr class="relegated">
-                        <td>14º</td>
-                        <td>Lucas Costa</td>
-                        <td>4</td>
-                    </tr>
-                    <tr class="relegated">
-                        <td>15º</td>
-                        <td>Julia Oliveira</td>
-                        <td>2</td>
-                    </tr>
-                </tbody>
+                </tbody> -->
             </table>
         </section>
 
@@ -168,7 +103,7 @@
         <section class="contato">
 
             <div class="mapa w50">
-                <iframe
+                <iframe class="mapa-mobile"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.630166710336!2d-51.178847585016315!3d-29.65364098203182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951968bd9b6ca641%3A0x6e71d6c126b6f478!2sFut%20HAUS%207!5e0!3m2!1spt-BR!2sbr!4v1658926900293!5m2!1spt-BR!2sbr"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
@@ -201,7 +136,7 @@
                 <h3>Entre em contato</h3>
                 <p>Fut HAUS 7, RS-239, 1700-1836 - Sol Nascente, Estância Velha - RS, 93600-000</p>
                 <p>Email: contato@futbahs.com.br</p>
-                <p>Telefone: (51) 5555-5555</p>
+                <p>Telefone: (51) 599657-4565</p>
             </div>
         </div>
         <div class="footer-bottom">

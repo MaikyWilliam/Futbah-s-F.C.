@@ -1,0 +1,78 @@
+{
+    "elenco":[
+        {
+            "id": 1,
+            "nome": "Maiky William",
+            "posicao": "Zagueiro",
+            "numero": "11",
+            "img": "images/1.jpg",
+            "classificacao": "6",
+            "gol": "2",
+            "assistencia": "4",
+            "desarmes": "10",
+            "campeao": "1"
+
+        },
+        {
+            "id": 2,
+            "nome": "Jonas Bueno",
+            "posicao": "Meia",
+            "numero": "30",
+            "img": "images/2.jpg",
+            "classificacao": "13",
+            "gol": "12",
+            "assistencia": "14",
+            "desarmes": "10",
+            "campeao": "1" 
+        },
+        {
+            "id": 3,
+            "nome": "Lucas Dieckel",
+            "posicao": "Zagueiro",
+            "numero": "16",
+            "img": "images/3.jpg",
+            "classificacao": "10",
+            "gol": "4",
+            "assistencia": "2",
+            "desarmes": "10",
+            "campeao": "1"
+        },
+        {
+            "id": 4,
+            "nome": "Luiz",
+            "posicao": "Goleiro",
+            "numero": "1",
+            "img": "images/4.jpg",
+            "classificacao": "6",
+            "gol": "0",
+            "assistencia": "10",
+            "desarmes": "10",
+            "campeao": "1" 
+        },
+        {
+            "id": 5,
+            "nome": "Daniel da Silva",
+            "posicao": "Goleiro",
+            "numero": "01",
+            "img": "images/5.jpg",
+            "classificacao": "3",
+            "gol": "0",
+            "assistencia": "10",
+            "desarmes": "10",
+            "campeao": "1" 
+        },
+        {
+            "id": 6,
+            "nome": "Lucas Trindade",
+            "posicao": "Zagueiro",
+            "numero": "4",
+            "img": "images/6.jpg",
+            "classificacao": "19",
+            "gol": "0",
+            "assistencia": "1",
+            "desarmes": "10",
+            "campeao": "1" 
+        }
+        
+    ]
+}
