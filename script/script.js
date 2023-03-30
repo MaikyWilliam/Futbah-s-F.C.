@@ -175,6 +175,7 @@ class Futbah {
       for (let i = 0; i < json.jogo.length; i++) {
         if(e.target.classList[1] == json.jogo[i].data){
           // console.log(json.jogo[i]);
+          debugger;
           localStorage.setItem('noticia', JSON.stringify(json.jogo[i]));
 
           window.location.href = "noticia-single.html";

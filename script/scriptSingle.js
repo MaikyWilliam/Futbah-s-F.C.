@@ -9,13 +9,14 @@ class Noticias {
     }
 
     async run() {
+        debugger;
         await this.montaNoticiaSingle();
     }
 
 
     // Procura no json de noticia, e informa os dados do jogo
     async montaNoticiaSingle() {
-
+        debugger;
         try {
 
             let noticiasSingle =
