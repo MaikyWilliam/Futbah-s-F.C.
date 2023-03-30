@@ -28,7 +28,7 @@ class Futbah {
       var i = 1;
       json.jogo.map((noticia) => {
         let header = noticia.titulo;
-        let paragrafo = noticia.noticia;
+        let paragrafo = noticia.noticia1;
         this.data = noticia.data;
 
         var divNoticia = document.createElement("div");

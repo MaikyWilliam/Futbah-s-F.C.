@@ -9,14 +9,12 @@ class Noticias {
     }
 
     async run() {
-        debugger;
         await this.montaNoticiaSingle();
     }
 
 
     // Procura no json de noticia, e informa os dados do jogo
     async montaNoticiaSingle() {
-        debugger;
         try {
 
             let noticiasSingle =
@@ -26,7 +24,11 @@ class Noticias {
                         <img src="${this.noticia.img}" alt="">
                     <p>${this.noticia.data}</p>
                     <h2>${this.noticia.titulo}</h2>
-                    <p>${this.noticia.noticia}</p>
+                    <p>${this.noticia.noticia1}</p>
+                    <br>
+                    <p>${this.noticia.noticia2}</p>
+                    <br>
+                    <p>${this.noticia.noticia3}</p>
                 </div>
                 `
 
