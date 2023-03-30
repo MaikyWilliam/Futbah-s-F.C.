@@ -138,7 +138,7 @@ section.noticia .container p {
     text-align: justify;
 }
 
-section.noticia .container a {
+section.noticia .container a{
     background-color: var(--cor-elenco);
     color: #333;
     padding: 10px;

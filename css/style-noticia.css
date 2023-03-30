@@ -1,11 +1,11 @@
-/* section.banner{ */
-    /* width: 800px;
-    height: 600px; */
-    /* margin: 0 2%; */
-/* } */
-section img{
-    width: 100%;
-    text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.noticia.w100 {
+    margin: 0 auto;
 }
 
 .w100 img{
@@ -15,7 +15,7 @@ section img{
     
 }
 
- .texto h2 {
+ /* .texto h2 {
     padding-top: 5px;
     font-size: 25px;
     margin-bottom: 25px;
@@ -25,7 +25,7 @@ section img{
     padding-top: 5px;
     font-size: 18px;
     margin-bottom: 15px;
-    /* padding-right: 50px; */
-    /* text-align: start; */
-    /* padding-bottom: 15px; */
-}
+    padding-right: 50px;
+    text-align: start;
+    padding-bottom: 15px;
+} */

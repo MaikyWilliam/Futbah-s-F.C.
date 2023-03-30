@@ -6,14 +6,16 @@ class Futbah {
     this.urlNoticia = 'jogadroes/list_noticia.json';
     this.paragrafo = document.getElementById("paragrafo");
     this.elencoJogadores = document.getElementById("elenco");
+    this.banner = document.getElementById(".banner");
     this.btnNoticia = "";
   }
 
-  run() {
-    this.noticia();
-    this.elenco();
-    this.rankClassificacao();
-    // this.clicando();
+  async run() {
+    await this.noticia();
+    await this.elenco();
+    await this.rankClassificacao();
+    this.clicando();
+    // this.btnNoticia = document.querySelectorAll('.btn_noticia')
   }
 
   // Procura no json de noticia, e informa os dados do jogo
@@ -27,41 +29,43 @@ class Futbah {
       json.jogo.map((noticia) => {
         let header = noticia.titulo;
         let paragrafo = noticia.noticia;
-        let data = noticia.data;
+        this.data = noticia.data;
 
         var divNoticia = document.createElement("div");
-        var divTexto = document.createElement("div");
+        // var divTexto = document.createElement("div");
         var img = document.createElement("img");
         var pData = document.createElement("p");
         var pParagrafo = document.createElement("p");
         var h2 = document.createElement("h2");
         var a = document.createElement("a");
 
-        img.textContent = `images/foto-${i}.jpg`; 
-        pData.textContent = data;
+        img.textContent = `images/foto-${i}.jpg`;
+        pData.textContent = this.data;
         h2.textContent = header;
         pParagrafo.textContent = paragrafo.substring(0, 250) + "...";
         a.textContent = `Saiba mais...`;
 
-        divNoticia.appendChild(divTexto);
-        divTexto.appendChild(img);
-        divTexto.appendChild(pData);
-        divTexto.appendChild(h2);
-        divTexto.appendChild(pParagrafo);
-        divTexto.appendChild(a);
+        // divNoticia.appendChild(divTexto);
+        divNoticia.appendChild(img);
+        divNoticia.appendChild(pData);
+        divNoticia.appendChild(h2);
+        divNoticia.appendChild(pParagrafo);
+        divNoticia.appendChild(a);
 
-        img.setAttribute("src",`images/foto-${i}.jpg`);
+        img.setAttribute("src", `images/foto-${i}.jpg`);
         divNoticia.classList.add("noticia");
         divNoticia.classList.add("w33");
+        divNoticia.classList.add(this.data);
         a.classList.add("btn_noticia");
+        // a.setAttribute("href", "noticia-single.html");
         this.paragrafo.appendChild(divNoticia)
-        a.setAttribute("onclick", "href='noticia-single.html'");
-        // divNoticia.setAttribute("onclick", this.clicando());
+        a.setAttribute("onclick", "futbah.clicando()");
+        a.classList.add(this.data);
         i++
       })
 
     } catch (error) {
-      console.log(error)
+      // console.log(error)
     }
   }
 
@@ -95,7 +99,7 @@ class Futbah {
 
       })
     } catch (err) {
-      console.error(err);
+      // console.error(err);
     }
   }
 
@@ -145,18 +149,61 @@ class Futbah {
       })
 
     } catch (err) {
-      console.error(err);
+      // console.error(err);
     }
   }
 
-  // async clicando() {
-    // this.btnNoticia = document.querySelector('.btn_noticia');
-    // await btnNoticia.addEventListener('click', (e) => {
-      // href='noticia-single.html'
-      // console.log('e')
-    // })
-  // }
 
+  async clicando() {
+    const response = await fetch(this.urlNoticia);
+    const json = await response.json();
+
+    this.btnNoticia = document.querySelectorAll('.noticia .w33')
+    // console.log(noticias);
+
+    NodeList.prototype.addEventListener = function (event, func) {
+      this.forEach(function (content, item) {
+        // console.log(item);
+        content.addEventListener(event, func);
+      });
+    }
+
+    this.btnNoticia.addEventListener("click", function (e) {
+      // console.log(this, "  awas clicked");
+      // console.log(json);
+
+      for (let i = 0; i < json.jogo.length; i++) {
+        if(e.target.classList[1] == json.jogo[i].data){
+          // console.log(json.jogo[i]);
+          localStorage.setItem('noticia', JSON.stringify(json.jogo[i]));
+
+          window.location.href = "noticia-single.html";
+
+          // futbah.enviaNoticia(noticia);
+        }
+      }
+      
+    });
+  }
+
+   // Procura no json de noticia, e informa os dados do jogo
+  // async enviaNoticia(noticia) {
+
+  //   try {
+      
+  //     noticiasSingle =
+  //     `<h2>${noticia.titulo}</h2>`
+
+  //     document.getElementById("noticia_single").innerHTML += noticiasSingle;
+  //     connsole.log(noticia)
+  //     // debugger
+
+      
+
+  //   } catch (error) {
+  //     // console.log(error)
+  //   }
+  // }
 
 
 }
