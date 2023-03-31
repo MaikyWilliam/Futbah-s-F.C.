@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
     font-family: 'Titillium Web', sans-serif;
+    user-select: none;
 }
 
 :root {
@@ -121,6 +122,7 @@ section.noticia .container .w33 {
 
 section.noticia .container img {
     width: 100%;
+    /* min-height: 270px; */
     box-shadow: #00000071 0px 3px 8px;
     border-radius: 3%;
 }
@@ -346,7 +348,7 @@ tr:hover {
 /* Fim do Rank*/
 
 /* Estilização do título da seção */
-.sobre h2 {
+#sobre h2 {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
@@ -355,7 +357,7 @@ tr:hover {
 }
 
 /* Estilização do parágrafo de descrição */
-.sobre p {
+#sobre p {
     font-size: 1.2rem;
     line-height: 1.8;
     margin: 2rem;
@@ -364,7 +366,7 @@ tr:hover {
 }
 
 /* Estilização da imagem do time */
-.sobre img {
+#sobre img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -374,7 +376,7 @@ tr:hover {
 }
 
 /* Estilização do container da seção */
-.sobre {
+#sobre {
     background-color: var(--cor-sobre);
     padding: 0.6rem 0;
 }
