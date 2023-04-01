@@ -30,6 +30,17 @@ class Futbah {
         });
     }
 
+    async criarElemento(tag, atributos, pai) {
+        var elemento = document.createElement(tag);
+        for (var chave in atributos) {
+            elemento.setAttribute(chave, atributos[chave]);
+        }
+        if (pai) {
+            pai.appendChild(elemento);
+        }
+        return elemento;
+    }
+
     // Procura no json de noticia, e informa os dados do jogo
     async noticia() {
 
@@ -38,12 +49,23 @@ class Futbah {
             const json = await response.json();
             let noticia = json.jogo;
             console.log(noticia)
+
             for (let i = 0; i < noticia.length; i++) {
                 this.ordenaNoticia(noticia)
 
+                // var container = document.getElementById('noticia_single')
+                
                 let header = noticia[i].titulo;
                 let paragrafo = noticia[i].noticia1;
                 let data = noticia[i].data;
+                // var container = document.getElementById('paragrafo')
+                
+                // var divNoticia = await this.criarElemento("div", { class: `w33 noticia ${data}` }, container);
+                // var img = await this.criarElemento("img", { class: "" }, this.paragrafo);
+                // var pData = await this.criarElemento("p", { class: "" }, this.paragrafo);
+                // var pParagrafo = await this.criarElemento("p", { class: "" }, this.paragrafo);
+                // var h2 = await this.criarElemento("h2", { class: "" }, this.paragrafo);
+                // var a = await this.criarElemento("a", { class: `btn_noticia` }, this.paragrafo);
 
                 var divNoticia = document.createElement("div");
                 var img = document.createElement("img");
@@ -69,7 +91,7 @@ class Futbah {
                 divNoticia.classList.add("w33");
                 divNoticia.classList.add(data);
                 a.classList.add("btn_noticia");
-                // a.setAttribute("href", "noticia-single.html");
+                a.setAttribute("href", "noticia-single.html");
                 this.paragrafo.appendChild(divNoticia)
                 a.setAttribute("onclick", "futbah.clicando()");
                 a.classList.add(data);

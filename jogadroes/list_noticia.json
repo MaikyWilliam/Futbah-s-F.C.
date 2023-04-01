@@ -2,6 +2,18 @@
     "jogo": [
         {
             "teveJogo": true,
+            "idNoticia": 5,
+            "data": "01/04/2023",
+            "titulo": "Time Branco vence em jogo emocionante",
+            "img": "images/jogo-dia-01-3.jpg",
+            "timePreto": ["Luiz", "Lucas Dieckel", "Edson Hoffmann", "Matheus", "Regis Rodrigues", "Wagner Cavalheiro", "Daniel", "Diequison"],
+            "timeBranco": ["Maiky William", "Lucas Trindade", "J.BUENO", "Goldani", "Luis Henrique Palave...", "Adriano", "Lucas", "Cleverson"],
+            "noticia1": "O jogo entre os times Preto e Branco, realizado no dia 01/04/2023, foi um verdadeiro show de gols e jogadas incríveis. Mesmo com a escalação de bons jogadores, o time Preto não conseguiu segurar o time Branco, que venceu a partida por 10 a 5.",
+            "noticia2": "O jogo começou com tudo e logo no início, o time Preto abriu o placar com um gol de Matheus, com passe de Daniel Collet. No entanto, o time Branco não se abateu e logo em seguida empatou com um gol de Cleverson. A partir daí, o time Branco dominou a partida e marcou mais nove gols, com destaque para Maiky William, que marcou Dois gols e foi o artilheiro da partida. O time Preto até tentou reagir, mas não conseguiu impedir a vitória do time Branco. Edson Hoffmann marcou um gol de falta, enquanto Daniel Collet marcou dois gols. No fim, a vitória foi do time Branco, que teve Maiky William como xerifão da partida e Jonas Bueno como garçon. Já Lucas foi o craque do jogo, com belas jogadas e muita habilidade em campo.",
+            "noticia3": "No geral, o jogo foi bem disputado e cheio de lances emocionantes. Destaque para os goleiros Luiz e Luciano, que fizeram belas defesas ao longo da partida. Por outro lado, Diequison foi considerado a pereba do jogo, tendo atuação apagada em campo. No fim teve uma celebração de um almoço para coroar o grande jogo"
+        },
+        {
+            "teveJogo": true,
             "idNoticia": 3,
             "data": "25/03/2023",
             "titulo": "Time PRETO domina e vence com tranquilidade o jogo",
@@ -35,36 +47,7 @@
             "noticia1": "O jogo entre o time Preto e o time Branco foi um verdadeiro espetáculo de futebol. As equipes entraram em campo com escalações bastante competitivas, prometendo uma partida disputada e emocionante. No time Preto, Kuhn foi o goleiro titular, protegido pela dupla de zagueiros formada por Edson e Cleverson. O meio de campo contou com Wagner, Adriano e Prado, enquanto o ataque teve a presença de Diequison, Oseias, Daniel collet e Prado. Já o time Branco teve Jonatan C. no gol, Lucas Dieckel e Lucas Trindade na zaga, Jonas Bueno, Goldani e Luis Henrique no meio campo e Matheus, Regis e Rodrigo no ataque. O jogo começou com uma pressão do time Branco, que logo aos 1 minuto de jogo assustou Kuhn com um chute forte de Jonas Bueno. Aos 3 minutos, nova tentativa de Bueno, mas o goleiro do time Preto fez uma defesa espetacular.",
             "noticia2":" Aos 5 minutos, Luis Henrique abriu o placar para o time Branco com um passe de Jonas Bueno. Porém, a resposta do time Preto foi imediata, com Adriano empatando o jogo aos 5 minutos, com passe de Prado. O jogo seguiu equilibrado, com destaque para os desarmes de Edson e Lucas Trindade. Aos 9 minutos, o time Branco voltou a ficar à frente, com um gol de Goldani, após passe de Matheus. Mas o time Preto não se abateu e, aos 12 minutos, Oseias empatou novamente o jogo com passe de Wagner. As equipes seguiram lutando pelo gol da vitória, com várias chances criadas de ambos os lados. Destaque para a habilidade de Luis Henrique, que fez uma finta 'elástico' em Edson aos 16 minutos e para a 'caneta' de Jonas Bueno em Daniel collet aos 19 minutos. Aos 28 minutos, o time Preto marcou um gol de placa, com Prado fazendo um golaço após uma bela jogada individual. O time Preto ampliou o placar aos 29 minutos, com Diequison marcando após passe de Adriano. Aos 34 minutos, Luis Henrique marcou novamente para o time Branco, com passe de Rodrigo. Mas, novamente, Oseias empatou o jogo para o time Preto aos 36 minutos, com passe de Kuhn. O jogo seguiu em ritmo frenético, com chances para ambos os lados.",
             "noticia3":"Destaque para as fintas 'chapeu' de Adriano em Jonas Bueno e Regis aos 30 minutos, para a 'caneta' de Jonas Bueno em Wagner aos 34 minutos e para a defesa difícil de Kuhn no chute de Matheus aos 42 minutos. No final, o time Branco ainda marcou dois gols, com Jonas Bueno aos 44 minutos e com Matheus aos 45 minutos, mas o time Preto respondeu com um gol de Diequison aos 53 minutos e um gol de Matheus aos 55 minutos, fechando o placar em 8 a 8. No final, os destaques do jogo foram Kuhn, do time Preto, que foi o paredão da partida, e Oseias, também do time Preto, que foi o artilheiro do confronto. Já o craque da partida foi Jonas Bueno, do time Branco, que deu passes importantes e realizou belas jogadas ao longo do jogo."
-        },
-        {
-            "teveJogo": false,
-            "idNoticia": 5,
-            "data": "01/04/2023",
-            "titulo": "Jogo ocorrera neste sabado",
-            "img": "https://http2.mlstatic.com/painel-tecido-sublimado-champions-league-30-alt-x-40-larg-D_NQ_NP_644976-MLB26431741392_112017-F.jpg",
-            "timePreto": [
-                "Luiz",
-                "Lucas Dieckel",
-                "Edson Hoffmann",
-                "Matheus",
-                "Regis Rodrigues",
-                "Wagner Cavalheiro",
-                "Daniel",
-                "Diequison"
-            ],
-            "timeBranco": [
-                "Maiky William",
-                "Lucas Trindade",
-                "J.BUENO",
-                "Goldani",
-                "Luis Henrique Palave...",
-                "Adriano",
-                "Lucas",
-                "Cleverson"
-            ],
-            "noticia1": "O jogo entre o time Preto e o time Branco foi um verdadeiro espetáculo de futebol. As equipes entraram em campo com escalações bastante competitivas, prometendo uma partida disputada e emocionante. No time Preto, Kuhn foi o goleiro titular, protegido pela dupla de zagueiros formada por Edson e Cleverson. O meio de campo contou com Wagner, Adriano e Prado, enquanto o ataque teve a presença de Diequison, Oseias, Daniel collet e Prado. Já o time Branco teve Jonatan C. no gol, Lucas Dieckel e Lucas Trindade na zaga, Jonas Bueno, Goldani e Luis Henrique no meio campo e Matheus, Regis e Rodrigo no ataque. O jogo começou com uma pressão do time Branco, que logo aos 1 minuto de jogo assustou Kuhn com um chute forte de Jonas Bueno. Aos 3 minutos, nova tentativa de Bueno, mas o goleiro do time Preto fez uma defesa espetacular.",
-            "noticia2": " Aos 5 minutos, Luis Henrique abriu o placar para o time Branco com um passe de Jonas Bueno. Porém, a resposta do time Preto foi imediata, com Adriano empatando o jogo aos 5 minutos, com passe de Prado. O jogo seguiu equilibrado, com destaque para os desarmes de Edson e Lucas Trindade. Aos 9 minutos, o time Branco voltou a ficar à frente, com um gol de Goldani, após passe de Matheus. Mas o time Preto não se abateu e, aos 12 minutos, Oseias empatou novamente o jogo com passe de Wagner. As equipes seguiram lutando pelo gol da vitória, com várias chances criadas de ambos os lados. Destaque para a habilidade de Luis Henrique, que fez uma finta 'elástico' em Edson aos 16 minutos e para a 'caneta' de Jonas Bueno em Daniel collet aos 19 minutos. Aos 28 minutos, o time Preto marcou um gol de placa, com Prado fazendo um golaço após uma bela jogada individual. O time Preto ampliou o placar aos 29 minutos, com Diequison marcando após passe de Adriano. Aos 34 minutos, Luis Henrique marcou novamente para o time Branco, com passe de Rodrigo. Mas, novamente, Oseias empatou o jogo para o time Preto aos 36 minutos, com passe de Kuhn. O jogo seguiu em ritmo frenético, com chances para ambos os lados.",
-            "noticia3": "Destaque para as fintas 'chapeu' de Adriano em Jonas Bueno e Regis aos 30 minutos, para a 'caneta' de Jonas Bueno em Wagner aos 34 minutos e para a defesa difícil de Kuhn no chute de Matheus aos 42 minutos. No final, o time Branco ainda marcou dois gols, com Jonas Bueno aos 44 minutos e com Matheus aos 45 minutos, mas o time Preto respondeu com um gol de Diequison aos 53 minutos e um gol de Matheus aos 55 minutos, fechando o placar em 8 a 8. No final, os destaques do jogo foram Kuhn, do time Preto, que foi o paredão da partida, e Oseias, também do time Preto, que foi o artilheiro do confronto. Já o craque da partida foi Jonas Bueno, do time Branco, que deu passes importantes e realizou belas jogadas ao longo do jogo."
         }
+        
     ]
 }

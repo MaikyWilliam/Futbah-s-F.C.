@@ -1,7 +1,5 @@
 class Noticias {
     constructor() {
-        // this.urlListJogador = 'jogadroes/list_jogador.json';
-        // this.urlNoticia = 'jogadroes/list_noticia.json';
         this.banner = document.getElementById("noticia_single");
         this.noticiaString = localStorage.getItem('noticia'); // Receber a string
         this.noticia = JSON.parse(this.noticiaString); // transformar em objeto novamente
@@ -25,7 +23,6 @@ class Noticias {
 
         return elemento;
     }
-
 
     // Procura no json de noticia, e informa os dados do jogo
     async montaNoticiaSingle() {
@@ -56,10 +53,7 @@ class Noticias {
                 pData.textContent = this.noticia.data;
                 h2Titulo.textContent = this.noticia.titulo
                 pNoticia1.textContent = this.noticia.noticia1
-
             }
-
-
 
             this.banner.innerHTML += noticiasSingle;
 
