@@ -54,12 +54,12 @@ class Futbah {
                 this.ordenaNoticia(noticia)
 
                 // var container = document.getElementById('noticia_single')
-                
+
                 let header = noticia[i].titulo;
                 let paragrafo = noticia[i].noticia1;
                 let data = noticia[i].data;
                 // var container = document.getElementById('paragrafo')
-                
+
                 // var divNoticia = await this.criarElemento("div", { class: `w33 noticia ${data}` }, container);
                 // var img = await this.criarElemento("img", { class: "" }, this.paragrafo);
                 // var pData = await this.criarElemento("p", { class: "" }, this.paragrafo);
@@ -74,7 +74,7 @@ class Futbah {
                 var h2 = document.createElement("h2");
                 var a = document.createElement("a");
 
-                img.textContent = noticia[i].img;;
+                img.textContent = noticia[i].img[0];
                 pData.textContent = data;
                 h2.textContent = header;
                 pParagrafo.textContent = paragrafo.substring(0, 250) + "...";
@@ -86,7 +86,7 @@ class Futbah {
                 divNoticia.appendChild(pParagrafo);
                 divNoticia.appendChild(a);
 
-                img.setAttribute("src", noticia[i].img);
+                img.setAttribute("src", noticia[i].img[0]);
                 divNoticia.classList.add("noticia");
                 divNoticia.classList.add("w33");
                 divNoticia.classList.add(data);

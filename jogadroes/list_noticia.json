@@ -1,11 +1,24 @@
 {
     "jogo": [
+        
         {
             "teveJogo": true,
             "idNoticia": 5,
+            "data": "09/04/2023",
+            "titulo": "Time PRETO brilha na manhã deste sabádo!",
+            "img": ["images/noticia/jogo-dia-01-2.jpg", "images/noticia/jogo-dia-01-3.jpg" ],
+            "timePreto": ["Luiz", "Lucas Trindade", "Adriano", "Lucas", "Goldani", "Oseias", "Daniel"],
+            "timeBranco": ["Daniel da Silva", "Lucas Dieckel", "Luis Henrique", "Matheus", "Regis Rodrigues", "Wagner Cavalheiro", "Diequison"],
+            "noticia1": "Em um jogo memorável, o time Preto goleou o time Branco por 11 a 1, em uma partida marcada pela atuação incrível de Daniel Collet. O jogo começou com bastante intensidade e logo no primeiro minuto de partida, Oseias abriu o placar para o time Preto, com um belo passe de Lucas. O segundo gol veio pouco depois, com Lucas marcando após assistência de Jubileu. O time Branco ainda descontou com Juninho, mas a partir daí foi só domínio do time Preto.",
+            "noticia2": "A partir do terceiro gol, marcado por Lucas com passe de Adriano, a partida se tornou um verdadeiro passeio do time Preto. A defesa do time Branco não conseguia segurar o ataque adversário, que criava muitas chances de gol. Destaque para as atuações de Jubileu, que marcou duas vezes, e de Daniel Collet, que balançou a rede em três oportunidades, além de dar três assistências.",
+            "noticia3": "Apesar da goleada, a partida teve momentos de bastante disputa, com jogadas ríspidas e muitas divididas. O goleiro Luiz, do time Preto, fez algumas defesas importantes e foi fundamental para manter a vantagem do seu time. No time Branco, o destaque negativo ficou por conta de Diequison, que teve uma atuação apagada e não conseguiu contribuir para sua equipe. No final, o placar elástico refletiu a superioridade do time Preto, que teve uma atuação inspirada e conquistou uma vitória incontestável."
+        },
+        {
+            "teveJogo": true,
+            "idNoticia": 4,
             "data": "01/04/2023",
             "titulo": "Time Branco vence em jogo emocionante",
-            "img": "images/jogo-dia-01-3.jpg",
+            "img": ["images/noticia/jogo-dia-01-3.jpg"],
             "timePreto": ["Luiz", "Lucas Dieckel", "Edson Hoffmann", "Matheus", "Regis Rodrigues", "Wagner Cavalheiro", "Daniel", "Diequison"],
             "timeBranco": ["Maiky William", "Lucas Trindade", "J.BUENO", "Goldani", "Luis Henrique Palave...", "Adriano", "Lucas", "Cleverson"],
             "noticia1": "O jogo entre os times Preto e Branco, realizado no dia 01/04/2023, foi um verdadeiro show de gols e jogadas incríveis. Mesmo com a escalação de bons jogadores, o time Preto não conseguiu segurar o time Branco, que venceu a partida por 10 a 5.",
@@ -17,7 +30,7 @@
             "idNoticia": 3,
             "data": "25/03/2023",
             "titulo": "Time PRETO domina e vence com tranquilidade o jogo",
-            "img": "images/foto-1.jpg",
+            "img": ["images/noticia/foto-1.jpg"],
             "timePreto":["Luiz", "Lucas Dieckel", "Edson Hoffmann", "Matheus", "Regis Rodrigues", "Wagner Cavalheiro", "Daniel", "Diequison"],
             "timeBranco":["Maiky William", "Lucas Trindade", "J.BUENO", "Goldani", "Luis Henrique Palave...", "Adriano", "Lucas", "Cleverson"],
             "noticia1": "Jogo emocionante entre o time Preto e o time Branco, no dia 25 de março de 2023. A partida começou com defesas difíceis de ambos os goleiros, Luiz e Daniel da Silva, que se destacaram nos primeiros minutos do jogo. Mas foi o time Preto que abriu o placar aos 12 minutos, com um belo gol de Adriano, com passe de Cleverson.",
@@ -29,7 +42,7 @@
             "idNoticia": 2,
             "data": "18/03/2023",
             "titulo": "Vitoria do time BRANCO de virada e garante os 3 pontos",
-            "img": "images/foto-2.jpg",
+            "img": ["images/noticia/foto-2.jpg"],
             "timePreto":["Luiz", "Lucas Dieckel", "Edson Hoffmann", "Matheus", "Regis Rodrigues", "Wagner Cavalheiro", "Daniel", "Diequison"],
             "timeBranco":["Maiky William", "Lucas Trindade", "J.BUENO", "Goldani", "Luis Henrique Palave...", "Adriano", "Lucas", "Cleverson"],
             "noticia1": "No último jogo do dia 18/03/2023, o time branco levou a melhor e venceu o time preto por 11 a 8. A partida foi bastante movimentada e com muitos gols, com destaque para as atuações de Daniel e Jonas Bueno. Time preto, Daniel da Silva abriu o placar aos 4 minutos de jogo, recebendo um belo passe de Lucas. Logo em seguida, Adriano ampliou o placar para o time preto, com passe de Maiky Wiliam. Aos 5 minutos, Lucas marcou o terceiro gol do time preto, novamente com passe de Maiky.",
@@ -41,7 +54,7 @@
             "idNoticia": 1,
             "data": "11/03/2023",
             "titulo": "Jogo do dia 11/03/2023 termina em empate eletrizante",
-            "img": "images/foto-3.jpg",
+            "img": ["images/noticia/foto-3.jpg"],
             "timePreto":["Luiz", "Lucas Dieckel", "Edson Hoffmann", "Matheus", "Regis Rodrigues", "Wagner Cavalheiro", "Daniel", "Diequison"],
             "timeBranco":["Maiky William", "Lucas Trindade", "J.BUENO", "Goldani", "Luis Henrique Palave...", "Adriano", "Lucas", "Cleverson"],
             "noticia1": "O jogo entre o time Preto e o time Branco foi um verdadeiro espetáculo de futebol. As equipes entraram em campo com escalações bastante competitivas, prometendo uma partida disputada e emocionante. No time Preto, Kuhn foi o goleiro titular, protegido pela dupla de zagueiros formada por Edson e Cleverson. O meio de campo contou com Wagner, Adriano e Prado, enquanto o ataque teve a presença de Diequison, Oseias, Daniel collet e Prado. Já o time Branco teve Jonatan C. no gol, Lucas Dieckel e Lucas Trindade na zaga, Jonas Bueno, Goldani e Luis Henrique no meio campo e Matheus, Regis e Rodrigo no ataque. O jogo começou com uma pressão do time Branco, que logo aos 1 minuto de jogo assustou Kuhn com um chute forte de Jonas Bueno. Aos 3 minutos, nova tentativa de Bueno, mas o goleiro do time Preto fez uma defesa espetacular.",

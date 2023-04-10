@@ -5,6 +5,7 @@ class Noticias {
         this.noticia = JSON.parse(this.noticiaString); // transformar em objeto novamente
         this.jsonJogadores = localStorage.getItem('elenco'); // Receber a string
         this.elenco = JSON.parse(this.jsonJogadores); // transformar em objeto novamente
+        
         // console.log(this.noticia);
     }
 
@@ -30,9 +31,14 @@ class Noticias {
             var container = document.getElementById('noticia_single')
             var div = await this.criarElemento("div", { class: "noticia w100" }, container);
             var titulo = await this.criarElemento("h2", { class: "texto" }, div);
-            this.criarElemento("img", { src: this.noticia.img }, div);
-            var pData = await this.criarElemento("p", { class: "texto" }, div);
+
+            var item = await this.criarElemento("div", { id: "img"}, div);
+            for (let i = 0; i < this.noticia.img.length; i++) {
+                this.criarElemento("img", { src: this.noticia.img[i] }, item);
+            }
+            
             var h2Titulo = await this.criarElemento("h2", { class: "texto" }, div);
+            var pData = await this.criarElemento("p", { class: "texto" }, div);
             var pNoticia1 = await this.criarElemento("p", { class: "texto" }, div);
             await this.criarElemento("br", { class: "texto" }, div);
             var pNoticia2 = await this.criarElemento("p", { class: "texto" }, div);
@@ -61,8 +67,6 @@ class Noticias {
             // console.log(error)
         }
     }
-
-
 }
 
 let noticias = new Noticias();
