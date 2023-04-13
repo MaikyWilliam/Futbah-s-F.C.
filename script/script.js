@@ -2,8 +2,8 @@
 
 class Futbah {
     constructor() {
-        this.urlListJogador = 'jogadroes/list_jogador.json';
-        this.urlNoticia = 'jogadroes/list_noticia.json';
+        this.urlListJogador = 'jogadores/list_jogador.json';
+        this.urlNoticia = 'jogadores/list_noticia.json';
         this.paragrafo = document.getElementById("paragrafo");
         this.elencoJogadores = document.getElementById("elenco");
         this.banner = document.getElementById(".banner");
@@ -157,31 +157,41 @@ class Futbah {
             });
 
             var i = 1;
+            this.nomesE = Array[{}];
             json.elenco.map((jogador) => {
+                
                 classificacao = `
-          <tbody> `
-                if (i < 5) {
-                    classificacao += `<tr class="promoted">`
-                } else if (i > 17) {
-                    classificacao += `<tr class="relegated">`
-                } else {
-                    classificacao += `<tr>`
-                }
+                <tbody> `
+                        if (i < 5) {
+                            classificacao += `<tr class="promoted">`
+                        } else if (i > 17) {
+                            classificacao += `<tr class="relegated">`
+                        } else {
+                            classificacao += `<tr>`
+                        }
 
-                classificacao += `
-                  <td>${i}</td>
-                  <td>${jogador.nome}</td>
-                  <td>${jogador.classificacao}</td>
-                  <td>${jogador.gol}</td>
-                  <td>${jogador.assistencia}</td>
-              </tr>
-          <tbody>
-          `
+                        classificacao += `
+                        <td>${i}</td>
+                        <td>${jogador.nome}</td>
+                        <td>${jogador.classificacao}</td>
+                        <td>${jogador.gol}</td>
+                        <td>${jogador.assistencia}</td>
+                    </tr>
+                <tbody>
+                `
                 document.getElementById("classificacao").innerHTML += classificacao;
                 i++;
+                
+                let novoObjeto = { nome: jogador.nome, classificacao: jogador.classificacao };
+                console.log(novoObjeto);
+                // meuArray.push(novoObjeto);
+                
+                // this.nomesE.push(novoObjeto)
+                
 
             })
-            console.log(json.elenco)
+            console.log(this.nomesE);
+            // console.log(json.elenco)
             localStorage.setItem('elenco', JSON.stringify(json.elenco));
 
         } catch (err) {

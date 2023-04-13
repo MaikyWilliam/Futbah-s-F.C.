@@ -3,6 +3,18 @@
         
         {
             "teveJogo": true,
+            "idNoticia": 6,
+            "data": "15/04/2023",
+            "titulo": "Partida decisiva para a classificação entre os times Preto e Branco",
+            "img": ["images/noticia/jogodia01-1.jpg"],
+            "timePreto": ["Daniel da silva", "Maiky William", "Lucas Dieckel", "J.BUENO", "Goldani", "Adriano", "Lucas", "Daniel", "Cleverson"],
+            "timeBranco": ["Luiz", "Edson Hoffmann", "Lucas Trindade", "Wagner Cavalheiro", "Regis Rodrigues", "Matheus", "Luis Henrique", "Oseias"],
+            "noticia1": "No dia 15/04/2023, os times Preto e Branco se enfrentarão em um jogo decisivo para definir a classificação no campeonato. Com apenas algumas rodadas restantes, cada ponto é valioso e as equipes entrarão em campo com tudo.",
+            "noticia2": "O time Preto conta com jogadores experientes como Lucas Dieckel, J. Bueno e Adriano, que estão lutando para manter a posição atual na tabela. Já o time Branco, liderado por Luis Henrique e Lucas Trindade, está logo atrás e busca ultrapassar o time Preto para se classificar. Com nomes importantes na tabela, como Lucas Trindade e Daniel Collet, os jogadores estão cientes da importância da partida e farão o possível para marcar pontos. Será um confronto emocionante, onde cada lance pode mudar a história do campeonato.",
+            "noticia3": "A partida entre os times Preto e Branco será um momento crucial para a definição da classificação no campeonato. Com jogadores habilidosos em ambos os lados, a expectativa é de um jogo emocionante e disputado. Os times entrarão em campo com tudo e mostrarão toda a sua garra e técnica para garantir a vitória e a tão desejada classificação."
+        },
+        {
+            "teveJogo": true,
             "idNoticia": 5,
             "data": "09/04/2023",
             "titulo": "Time PRETO brilha na manhã deste sábado!",
