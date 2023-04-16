@@ -3,8 +3,20 @@
         
         {
             "teveJogo": true,
-            "idNoticia": 6,
+            "idNoticia": 7,
             "data": "15/04/2023",
+            "titulo": "Partida intensa e emocionante",
+            "img": ["images/noticia/foto-3.jpg"],
+            "timePreto": ["Daniel da silva", "Maiky William", "Lucas Dieckel", "J.BUENO", "Goldani", "Adriano", "Lucas", "Daniel", "Cleverson"],
+            "timeBranco": ["Luiz", "Edson Hoffmann", "Lucas Trindade", "Wagner Cavalheiro", "Regis Rodrigues", "Matheus", "Luis Henrique", "Oseias"],
+            "noticia1": "O jogo que parou a cidade na manhã deste sábado foi simplesmente eletrizante! A disputa foi entre o Time Preto e o Time Branco, com lances emocionantes e muitos gols para ambos os lados. O clima no estádio era de pura adrenalina e tensão, com a torcida de ambos os times vibrando a cada jogada. O jogo começou bastante acirrado, com desarmes e defesas difíceis de ambos os goleiros. Logo no início, o Time Branco abriu o placar com um gol de Wagner Cavalheiro, que recebeu um belo passe de Oseias, deixando a torcida em êxtase. Mas o Time Preto não se abateu e respondeu rapidamente com um gol de Daniel Collet, deixando a torcida alvoroçada.",
+            "noticia2": "A partir daí, a partida ficou ainda mais intensa e emocionante, com os dois times se alternando no placar e muitas jogadas incríveis. O destaque da partida foi Jonas Bueno, do Time Preto, que marcou três gols e fez a torcida ir à loucura. Mas o Time Branco não deixou barato e também fez bonito, com Oseias e Matheus marcando dois gols cada. No final, o placar ficou em 7 a 6 para o Time Preto, em um jogo eletrizante até o último minuto. A torcida do Time Preto explodiu em comemoração, enquanto a do Time Branco ficou desolada. Foi uma partida para ficar na história e relembrada por muitos anos.",
+            "noticia3": "Destaque também para os jogadores que fizeram a diferença no jogo, como Luiz, goleiro do Time Branco, que fez três defesas difíceis e salvou o time em momentos cruciais. Maiky William, do Time Preto, teve uma atuação incrível com três desarmes importantes. Wagner Cavalheiro, do Time Branco, foi o garçom da partida, com duas assistências. Já Diequison, do Time Branco, foi considerado o pereba, com uma nota de 6,48 de 10. E, é claro, não podemos esquecer do craque da partida, Daniel da Silva, do Time Preto, que teve uma atuação espetacular e recebeu a nota 9,06 de 10. Foi simplesmente uma manhã inesquecível para todos os amantes do futebol."
+        },
+        {
+            "teveJogo": true,
+            "idNoticia": 6,
+            "data": "13/04/2023",
             "titulo": "Partida decisiva para a classificação entre os times Preto e Branco",
             "img": ["images/noticia/jogodia01-1.jpg"],
             "timePreto": ["Daniel da silva", "Maiky William", "Lucas Dieckel", "J.BUENO", "Goldani", "Adriano", "Lucas", "Daniel", "Cleverson"],
