@@ -53,19 +53,9 @@ class Futbah {
             for (let i = 0; i < noticia.length; i++) {
                 this.ordenaNoticia(noticia)
 
-                // var container = document.getElementById('noticia_single')
-
                 let header = noticia[i].titulo;
                 let paragrafo = noticia[i].noticia1;
                 let data = noticia[i].data;
-                // var container = document.getElementById('paragrafo')
-
-                // var divNoticia = await this.criarElemento("div", { class: `w33 noticia ${data}` }, container);
-                // var img = await this.criarElemento("img", { class: "" }, this.paragrafo);
-                // var pData = await this.criarElemento("p", { class: "" }, this.paragrafo);
-                // var pParagrafo = await this.criarElemento("p", { class: "" }, this.paragrafo);
-                // var h2 = await this.criarElemento("h2", { class: "" }, this.paragrafo);
-                // var a = await this.criarElemento("a", { class: `btn_noticia` }, this.paragrafo);
 
                 var divNoticia = document.createElement("div");
                 var img = document.createElement("img");
@@ -77,6 +67,7 @@ class Futbah {
                 img.textContent = noticia[i].img[0];
                 pData.textContent = data;
                 h2.textContent = header;
+                
                 pParagrafo.textContent = paragrafo.substring(0, 250) + "...";
                 a.textContent = `Saiba mais...`;
 
@@ -113,8 +104,8 @@ class Futbah {
             json.elenco.map((jogador) => {
 
                 let texto = `
-          <div class="jogador">
-          <div class="btn-avancar-jogador">
+            <div class="jogador">
+            <div class="btn-avancar-jogador">
             <!-- ${jogador.id} -->
             <img src="${jogador.img}" alt="Foto do ${jogador.nome}">
             <h3>${jogador.nome}</h3>
@@ -183,14 +174,10 @@ class Futbah {
                 i++;
                 
                 let novoObjeto = { nome: jogador.nome, classificacao: jogador.classificacao };
-                console.log(novoObjeto);
-                // meuArray.push(novoObjeto);
-                
-                // this.nomesE.push(novoObjeto)
+                //console.log(novoObjeto); // pegar a lista da classificação
                 
 
             })
-            console.log(this.nomesE);
             // console.log(json.elenco)
             localStorage.setItem('elenco', JSON.stringify(json.elenco));
 

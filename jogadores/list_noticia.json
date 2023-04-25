@@ -1,6 +1,17 @@
 {
     "jogo": [
-        
+        {
+            "teveJogo": false,
+            "idNoticia": 8,
+            "data": "22/04/2023",
+            "titulo": "Jogo eletrizante termina com vitória do time PRETO por 11 a 7",
+            "img": ["images/noticia/jogo22-04.jpeg"],
+            "timePreto": ["Daniel da silva", "Maiky William", "Lucas Dieckel", "Wagner Cavalheiro", "J.BUENO", "Goldani", "Matheus", "Daniel", "Cleverson"],
+            "timeBranco": ["Luiz", "Edson Hoffmann", "Lucas Trindade", "Luis Henrique Palave...", "Adriano", "Regis Rodrigues", "Lucas", "Diequison", "Oseias"],
+            "noticia1": "Em uma manhã ensolarada de sábado, as equipes PRETO e BRANCO se enfrentaram em um verdadeiro duelo de titãs no estádio municipal. Com uma escalação forte e muita determinação, os times entraram em campo dispostos a dar o melhor de si. Desde o começo, o jogo foi emocionante, com lances de tirar o fôlego e muita intensidade. O time BRANCO começou bem, com desarmes de Luis Henrique e Lucas Dieckel, mas logo foi o time PRETO quem dominou a partida, com um gol de Lucas, seguido por mais quatro gols espetaculares do artilheiro.",
+            "noticia2": "O time BRANCO ainda tentou reagir, com gols de Edson Hoffmann, Oseias, Luis Henrique, Lucas e Daniel Collet, mas o time PRETO se mostrou superior, com gols de Jonas Bueno, Matheus, Cleverson e Wagner Cavalheiro. E não foram apenas os gols que empolgaram a torcida: as defesas difíceis de Daniel da Silva e Luiz, nos chutes de Oseias, Luis Henrique, Lucas Dieckel e Cleverson, aumentaram ainda mais a emoção da partida.",
+            "noticia3": "Com o apito final do juiz, o time PRETO saiu vitorioso e a torcida foi ao delírio, comemorando a atuação brilhante de Lucas, que marcou 5 gols e foi eleito o craque da partida, e as defesas espetaculares de Daniel da Silva, que garantiu a vitória de sua equipe. Já o time BRANCO, apesar da derrota, mostrou garra e determinação, e certamente irá se reorganizar para buscar melhores resultados nas próximas partidas. Em resumo, foi um jogo eletrizante, emocionante e cheio de reviravoltas, que fez a alegria da torcida presente e mostrou o verdadeiro espírito do futebol: paixão, emoção e muita adrenalina!"
+        },
         {
             "teveJogo": true,
             "idNoticia": 7,
