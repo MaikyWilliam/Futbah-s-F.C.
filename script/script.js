@@ -68,7 +68,7 @@ class Futbah {
                 pData.textContent = data;
                 h2.textContent = header;
                 
-                pParagrafo.textContent = paragrafo.substring(0, 250) + "...";
+                pParagrafo.textContent = paragrafo.substring(0, 200) + "...";
                 a.textContent = `Saiba mais...`;
 
                 divNoticia.appendChild(img);

@@ -6,11 +6,16 @@ class Noticias {
         this.jsonJogadores = localStorage.getItem('elenco'); // Receber a string
         this.elenco = JSON.parse(this.jsonJogadores); // transformar em objeto novamente
         
+
         // console.log(this.noticia);
     }
 
     async run() {
         await this.montaNoticiaSingle();
+
+        setInterval(async () => {
+            // await this.loop();
+        }, 2000);
     }
 
     async criarElemento(tag, atributos, pai) {
@@ -25,6 +30,13 @@ class Noticias {
         return elemento;
     }
 
+    async loop() {
+        for (let i = 0; i < this.noticia.img.length; i++) {
+            console.log(this.imagem[i]);
+            this.imagem[i].style.display = 'none';
+        }
+    }
+
     // Procura no json de noticia, e informa os dados do jogo
     async montaNoticiaSingle() {
         try {
@@ -32,11 +44,13 @@ class Noticias {
             var div = await this.criarElemento("div", { class: "noticia w100" }, container);
             var titulo = await this.criarElemento("h2", { class: "texto" }, div);
 
-            var item = await this.criarElemento("div", { id: "img"}, div);
+            var item = await this.criarElemento("div", { id: "img" }, div);
             for (let i = 0; i < this.noticia.img.length; i++) {
                 this.criarElemento("img", { src: this.noticia.img[i] }, item);
             }
+            this.imagem = document.querySelectorAll('#img img');
             
+
             var h2Titulo = await this.criarElemento("h2", { class: "texto" }, div);
             var pData = await this.criarElemento("p", { class: "texto" }, div);
             var pNoticia1 = await this.criarElemento("p", { class: "texto" }, div);
