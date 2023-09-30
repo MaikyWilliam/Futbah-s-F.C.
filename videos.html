@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutBah's Futebol Clube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Titillium+Web:ital,wght@0,200;0,300;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-noticia.css">
+    <link rel="stylesheet" href="css/style-videos.css">
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <section id="videos_hoje" class="videos">
+        <h1 class="titulo">Carrossel de Vídeos</h1>
+        <div class="carousel-container">
+            <div class="carousel">
+                <!-- Vídeos serão gerados dinamicamente aqui -->
+            </div>
+
+            <div class="carousel-controls">
+                <button id="prevBtn" class="carousel-control">Anterior</button>
+                <button id="nextBtn" class="carousel-control">Próximo</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/jqueryMenu-footer.js"></script>
+    <script src="buscaVideos/httpClient.js" defer></script>
+
+    <script>
+        function formatarData(dataString) {
+            const data = new Date(dataString);
+
+            const dia = data.getDate().toString().padStart(2, '0');
+            const mes = (data.getMonth() + 1).toString().padStart(2, '0'); // +1 porque os meses são indexados de 0 a 11
+            const ano = data.getFullYear();
+
+            return `${dia}/${mes}/${ano}`;
+        }
+
+        // Função para criar elementos de vídeo dinamicamente com base nos dados do vídeo
+        function createVideoElement(videoData) {
+            const tituloH1 = document.querySelector(".titulo");
+
+            tituloH1.innerHTML = `Vídeos de ${videoData.data}`;
+            const videoElement = document.createElement("div");
+            videoElement.classList.add("carousel-item");
+
+            // Criar um elemento de vídeo
+            const video = document.createElement("video");
+            video.controls = true;
+            video.innerHTML = `<source src="${videoData.url}" type="video/mp4">`;
+
+            const timeElement = document.createElement("p");
+            timeElement.textContent = `Hora: ${videoData.formattedTime}`;
+
+            // Adicionar os elementos criados ao elemento do vídeo
+            videoElement.appendChild(video);
+            videoElement.appendChild(timeElement);
+
+            return videoElement;
+        }
+
+        // Função para atualizar o carrossel
+        function updateCarousel() {
+            const carousel = document.querySelector(".carousel");
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+            const carouselItems = document.querySelectorAll(".carousel-item");
+            let currentIndex = 0;
+
+            // Exibir o vídeo atual
+            function showCurrentVideo() {
+                carouselItems.forEach((item, index) => {
+                    if (index === currentIndex) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            }
+
+            // Avançar para o próximo vídeo
+            function nextVideo() {
+                currentIndex = (currentIndex + 1) % carouselItems.length;
+                showCurrentVideo();
+            }
+
+            // Voltar para o vídeo anterior
+            function prevVideo() {
+                currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+                showCurrentVideo();
+            }
+
+            // Adicionar eventos aos botões Anterior e Próximo
+            prevBtn.addEventListener("click", prevVideo);
+            nextBtn.addEventListener("click", nextVideo);
+
+            // Mostrar o primeiro vídeo ao carregar a página
+            showCurrentVideo();
+        }
+
+        // Função para inicializar o carrossel com os vídeos carregados
+        async function initializeCarousel() {
+
+            async function getVideos() {
+
+                let videosLocalStorage = localStorage.getItem('videos');
+                if (videosLocalStorage) {
+                    videos = JSON.parse(videosLocalStorage);
+                    return videos;
+                } else {
+                    // Crie uma instância da classe HttpClient
+                    const httpClient = new HttpClient();
+                    const date = httpClient.getPreviousSaturday(new Date());
+                    console.log('Chamando Login...');
+                    await httpClient.login();
+                    console.log('Chamando getChannelId...');
+                    await httpClient.getChannelId();
+                    console.log('Chamando getVideos...');
+                    const videos = await httpClient.getVideos();
+
+                    videos.videos.forEach((video) => {
+                        video.data = formatarData(date.date);
+                    });
+
+                    localStorage.setItem('videos', JSON.stringify(videos));
+
+                    return videos;
+                }
+            }
+
+            const videosData = await getVideos();
+
+            // Encontre o elemento do carrossel
+            const carousel = document.querySelector(".carousel");
+
+            // Adicione os vídeos dinamicamente ao carrossel
+            videosData.videos.forEach((videoData) => {
+                const videoElement = createVideoElement(videoData);
+                carousel.appendChild(videoElement);
+            });
+
+            // Inicialize o carrossel
+            updateCarousel();
+        }
+
+        // Chame a função para inicializar o carrossel quando a página carregar
+        window.addEventListener("load", initializeCarousel);
+    </script>
+</body>
+
+</html>

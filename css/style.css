@@ -14,31 +14,6 @@
     --cor-elenco: #a5c3a7;
     --cor-rank: #d5e0b5;
     --cor-sobre: #f8f4c4;
-
-    /** exeplos de cores**/
-    /* --cor-nav: #f2e8c4;
-    --cor-noticia: #98d9b6;
-    --cor-elenco: #3ec9a7;
-    --cor-rank: #2b879e;
-    --cor-sobre: #616668; */
-
-    /* --cor-nav: #0ca5b0;
-    --cor-noticia: #4e3f30;
-    --cor-elenco: #fefeeb;
-    --cor-rank: #f8f4e4;
-    --cor-sobre: #a5b3aa; */
-
-    /* --cor-nav: #6096B4;
-    --cor-noticia: #93BFCF;
-    --cor-elenco: #BDCDD6;
-    --cor-rank: #EEE9DA;
-    --cor-sobre: #5cceee; */
-
-    /* --cor-nav: #d8f5d1;
-    --cor-noticia: #9ddbca;
-    --cor-elenco: #92b395;
-    --cor-rank: #726c81;
-    --cor-sobre: #565164; */
 }
 
 
@@ -64,7 +39,8 @@ nav {
 }
 
 nav img {
-    max-width: 150px;
+    margin-top: 20px;
+    max-width: 96px;
     cursor: pointer;
 }
 
@@ -496,61 +472,67 @@ footer {
 @media screen and (max-width: 768px) {
 
     /* Estilo para a barra de navegação */
-    .mobile {
-        display: block;
-    }
 
+    nav img{
+        margin-top: 0px;
+        max-width: 94px;
+    }
     .desktop {
         display: none;
     }
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 10px;
-    }
-
-    nav img {
-        margin-top: -10px;
-        max-width: 25%;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    nav button {
+    .menu.mobile {
         display: block;
-        background-color: #333;
+        background-color: var(--cor-nav);
+        text-align: center;
+        position: relative; /* Adicione position:relative; */
+        z-index: 999; /* Adicione z-index para que o menu fique acima de outros elementos */
+    }
+
+    .menu-toggle {
+        background-color: var(--cor-noticia);
         color: #fff;
-        padding: 10px 20px;
-        border: none;
+        font-size: 18px;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
         cursor: pointer;
     }
 
-    nav button:hover {
-        background-color: #444;
-    }
-
-    nav.open ul {
-        display: block;
-        position: absolute;
-        top: 100%;
+    .menu.mobile ul {
+        display: none;
+        position: absolute; /* Coloque o menu em posição absoluta */
+        top: 100%; /* Coloque-o abaixo do botão */
         left: 0;
         width: 100%;
-        background-color: #333;
-        padding: 10px;
-        text-align: center;
+        background-color: #2c2929a6;
+        padding: 10px 0;
+        z-index: 998; /* Certifique-se de que o menu seja exibido acima do botão */
     }
 
-    nav.open ul li {
+    .menu.mobile ul.open {
         display: block;
+    }
+
+    .menu.mobile ul li {
         margin-bottom: 10px;
     }
 
-    nav.open ul li:last-child {
+    .menu.mobile ul li:last-child {
         margin-bottom: 0;
+    }
+
+    .menu.mobile ul li a {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .menu.mobile ul li a:hover {
+        background-color: #000000;
     }
 
     /** Noticia **/

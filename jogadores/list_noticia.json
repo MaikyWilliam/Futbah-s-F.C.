@@ -2,6 +2,18 @@
     "jogo": [
         {
             "teveJogo": true,
+            "idNoticia": 11,
+            "data": "30/09/2023",
+            "titulo": "Empate Épico em Partida de Futebol",
+            "img": ["images/noticia/jogo-dia-30-9.jpg"],
+            "timePreto": ["Daniel da silva", "Lucas Trindade", "Wagner Cavalheiro", "Luis Henrique ", "Adriano", "Lucas Henrique", "Daniel", "Diequison"],
+            "timeBranco": ["Luiz", "Maiky William", "Edson Hoffmann", "J.BUENO", "Matheus", "Goldani", "Cleverson", "William" ],
+            "noticia1": "A partida começou com um ritmo frenético, e Lucão do Time VERMELHO abriu o placar com um gol de falta. Logo em seguida, Wagner Cavalheiro aumentou a vantagem com um belo gol para o Time VERMELHO. O Time AZUL não se deixou abalar e respondeu com um gol de Dias, aproveitando um passe de Goldani. Jonas Bueno, do Time AZUL, empatou o jogo com seu gol, mas a igualdade foi curta, pois Daniel Collet marcou novamente para o Time VERMELHO.",
+            "noticia2": "Jonas Bueno não desistiu e marcou mais um gol para o Time AZUL, seguido por Goldani, que aumentou a vantagem para sua equipe. No entanto, Lucão não ficou atrás e marcou seu segundo gol para o Time VERMELHO, trazendo o jogo de volta à igualdade. Maiky, com assistência de Dias, marcou o sexto gol para o Time AZUL, mas Lucão estava imparável e registrou mais dois gols consecutivos, completando um impressionante poker de gols.",
+            "noticia3": "O jogo foi um espetáculo do começo ao fim, com uma série de reviravoltas e grandes jogadas por ambas as equipes. No final, o empate em 6 a 6 refletiu a intensidade e a qualidade do confronto, deixando os torcedores em êxtase. A atuação soberba de Lucão, com seus quatro gols, foi inegavelmente o ponto alto desta partida que entrará para a história do futebol."
+        },
+        {
+            "teveJogo": true,
             "idNoticia": 10,
             "data": "06/05/2023",
             "titulo": "Jogo da 17ª rodada: Time Preto 7 x 8 Time Branco",
