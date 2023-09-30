@@ -52,8 +52,8 @@
         // Função para criar elementos de vídeo dinamicamente com base nos dados do vídeo
         function createVideoElement(videoData) {
             const tituloH1 = document.querySelector(".titulo");
-
-            tituloH1.innerHTML = `Vídeos de ${formatarData(videoData.data)}`;
+            let data = formatarData(videoData.data)
+            tituloH1.innerHTML = `Vídeos de ${data}`;
             const videoElement = document.createElement("div");
             videoElement.classList.add("carousel-item");
 
@@ -130,7 +130,7 @@
                     await httpClient.getChannelId();
                     console.log('Chamando getVideos...');
                     const videos = await httpClient.getVideos();
-                    
+
                     localStorage.setItem('videos', JSON.stringify(videos));
 
                     return videos;
