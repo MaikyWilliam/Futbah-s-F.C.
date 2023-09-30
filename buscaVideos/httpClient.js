@@ -77,7 +77,6 @@ class HttpClient {
     async getVideos() {
         // const date = this.getPreviousSaturday(new Date('2023-09-23 09:15:41 GMT-0300'));
         const date = this.getPreviousSaturday(new Date());
-        console.log(date);
 
         const videoParams = {
             state: 'RS',
@@ -94,19 +93,18 @@ class HttpClient {
         const url = `${baseUrl}?${queryString}`;
 
         try {
-            let data = await this.makeHttpRequest(url, "GET", null, this.token);
-            console.log(data);
+            let responseUrl = await this.makeHttpRequest(url, "GET", null, this.token);
+            console.log(responseUrl);
             // Array para armazenar os objetos com as URLs
             const urlObjects = [];
 
-            // Adicione a data à estrutura desejada
-            const dataObject = {
-                data: date.date,
+            // Adicione a responseUrl à estrutura desejada
+            const responseUrlObject = {
                 videos: []
             };
 
-            // Percorra o array de objetos e adicione cada objeto ao array urlObjects e também à estrutura dataObject
-            data.forEach(item => {
+            // Percorra o array de objetos e adicione cada objeto ao array urlObjects e também à estrutura responseUrlObject
+            responseUrl.forEach(item => {
                 if (item.url) {
                     urlObjects.push({
                         thumbnailUrl: item.thumbnailUrl,
@@ -114,8 +112,9 @@ class HttpClient {
                         hora: item.formattedTime
                     });
 
-                    // Adicione os mesmos dados à estrutura dataObject
-                    dataObject.videos.push({
+                    // Adicione os mesmos dados à estrutura responseUrlObject
+                    responseUrlObject.videos.push({
+                        data: date.date,
                         videoId: item.videoId,
                         url: item.url,
                         thumbnailUrl: item.thumbnailUrl,
@@ -126,8 +125,8 @@ class HttpClient {
 
 
             // Exiba o array com os objetos
-            console.log(dataObject);
-            return dataObject;
+            console.log(responseUrlObject);
+            return responseUrlObject;
 
         } catch (error) {
             console.log('Erro na busca de videos:', data);

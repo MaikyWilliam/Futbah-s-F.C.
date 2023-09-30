@@ -19,7 +19,7 @@
     <header id="header"></header>
 
     <section id="videos_hoje" class="videos">
-        <h1 class="titulo">Carrossel de Vídeos</h1>
+        <h1 class="titulo"></h1>
         <div class="carousel-container">
             <div class="carousel">
                 <!-- Vídeos serão gerados dinamicamente aqui -->
@@ -42,7 +42,7 @@
         function formatarData(dataString) {
             const data = new Date(dataString);
 
-            const dia = data.getDate().toString().padStart(2, '0');
+            const dia = (data.getDate() + 1).toString().padStart(2, '0');
             const mes = (data.getMonth() + 1).toString().padStart(2, '0'); // +1 porque os meses são indexados de 0 a 11
             const ano = data.getFullYear();
 
@@ -53,7 +53,7 @@
         function createVideoElement(videoData) {
             const tituloH1 = document.querySelector(".titulo");
 
-            tituloH1.innerHTML = `Vídeos de ${videoData.data}`;
+            tituloH1.innerHTML = `Vídeos de ${formatarData(videoData.data)}`;
             const videoElement = document.createElement("div");
             videoElement.classList.add("carousel-item");
 
@@ -123,18 +123,14 @@
                 } else {
                     // Crie uma instância da classe HttpClient
                     const httpClient = new HttpClient();
-                    const date = httpClient.getPreviousSaturday(new Date());
+                    // const date = httpClient.getCurrentDateOrNextSaturday(new Date());
                     console.log('Chamando Login...');
                     await httpClient.login();
                     console.log('Chamando getChannelId...');
                     await httpClient.getChannelId();
                     console.log('Chamando getVideos...');
                     const videos = await httpClient.getVideos();
-
-                    videos.videos.forEach((video) => {
-                        video.data = formatarData(date.date);
-                    });
-
+                    
                     localStorage.setItem('videos', JSON.stringify(videos));
 
                     return videos;

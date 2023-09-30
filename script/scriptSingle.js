@@ -32,7 +32,6 @@ class Noticias {
 
     async loop() {
         for (let i = 0; i < this.noticia.img.length; i++) {
-            console.log(this.imagem[i]);
             this.imagem[i].style.display = 'none';
         }
     }

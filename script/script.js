@@ -48,7 +48,6 @@ class Futbah {
             const response = await fetch(this.urlNoticia);
             const json = await response.json();
             let noticia = json.jogo;
-            console.log(noticia)
 
             for (let i = 0; i < noticia.length; i++) {
                 this.ordenaNoticia(noticia)
