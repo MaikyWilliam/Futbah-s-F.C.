@@ -19,7 +19,6 @@
 
 
 /* CSS para desktop */
-/* @media screen and (min-width: 769px) { */
 
 /* Estilo para a barra de navegação */
 .mobile {
@@ -31,10 +30,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    height: 100px;
+    height: 110px;
     background-color: #e7eef0;
     background: var(--cor-nav) url(../images/bg_header.png) top center no-repeat;
-    border-bottom: 10px solid var(--cor-nav);
+    border-bottom: 0px solid var(--cor-nav);
     box-shadow: 0 0 10px #0000001a;
 }
 

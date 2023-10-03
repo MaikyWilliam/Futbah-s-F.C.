@@ -94,7 +94,7 @@ class HttpClient {
 
         try {
             let responseUrl = await this.makeHttpRequest(url, "GET", null, this.token);
-            console.log(responseUrl);
+            // console.log(responseUrl);
             // Array para armazenar os objetos com as URLs
             const urlObjects = [];
 
@@ -125,7 +125,7 @@ class HttpClient {
 
 
             // Exiba o array com os objetos
-            console.log(responseUrlObject);
+            // console.log(responseUrlObject);
             return responseUrlObject;
 
         } catch (error) {

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=Titillium+Web:ital,wght@0,200;0,300;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleAdmin.css">
+    <title>FutBah's Futebol Clube</title>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <h1>Página de Administração</h1>
+
+    <div class="admin-panel">
+        <ul>
+            <li><a href="#" id="edit-elenco">Edição de Elenco</a></li>
+            <li><a href="#" id="add-news">Adicionar Notícia</a></li>
+        </ul>
+        <div id="elenco-form" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Classificação</th>
+                        <th>Gols</th>
+                        <th>Assistências</th>
+                        <th>Desarmes</th>
+                        <th>Resultados</th>
+                    </tr>
+                </thead>
+                <tbody id="elenco-table">
+                    <!-- Dados do elenco serão preenchidos aqui de forma dinâmica -->
+                </tbody>
+            </table>
+
+            <!-- Célula oculta para armazenar dados do jogador em formato JSON -->
+            <div id="json-data" style="display: none;"></div>
+
+            <button id="salvar-button">Salvar Alterações</button>
+        </div>
+        <div id="add-news-form" style="display: none;">
+            <h2>Adicionar Notícia</h2>
+            <form id="news-form">
+                <label for="data">Data:</label>
+                <input type="text" id="data" name="data" required><br><br>
+
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required><br><br>
+
+                <label for="img">Nome da imagem (URL já está completa):</label>
+                <input type="text" id="img" name="img" required><br><br>
+
+                <label for="timeAzul">Time Azul (separado por vírgulas):</label>
+                <input type="text" id="timeAzul" name="timeAzul" required><br><br>
+
+                <label for="timeVermelho">Time Vermelho (separado por vírgulas):</label>
+                <input type="text" id="timeVermelho" name="timeVermelho" required><br><br>
+
+                <label for="noticia1">Introdução:</label>
+                <textarea id="noticia1" name="noticia1" style="max-width: 1060px;" required></textarea><br><br>
+
+                <label for="noticia2">Desenvolvimento:</label>
+                <textarea id="noticia2" name="noticia2" style="max-width: 1060px;" required></textarea><br><br>
+
+                <label for="noticia3">Conclusão:</label>
+                <textarea id="noticia3" name="noticia3" style="max-width: 1060px;" required></textarea><br><br>
+
+                <button type="button" id="salvar-noticia">Salvar</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer id="footer"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsonwebtoken/8.5.1/jsonwebtoken.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/jqueryMenu-footer.js"></script>
+    <script src="script/script-admin.js"></script>
+</body>
+
+</html>
