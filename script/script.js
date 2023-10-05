@@ -41,19 +41,43 @@ class Futbah {
         return elemento;
     }
 
+    async formatarTextoParaParagrafos(texto) {
+        // Divide o texto em parágrafos usando quebras de linha como separador
+        const paragrafos = texto.split('\n');
+
+        // Filtra e remove parágrafos vazios
+        const paragrafosFiltrados = paragrafos.filter(paragrafo => paragrafo.trim() !== '');
+
+        // Formata cada parágrafo em uma tag <p>
+        const paragrafosFormatados = paragrafosFiltrados.map(paragrafo => {
+            // Processa a formatação dentro do parágrafo
+            const paragrafoFormatado = paragrafo
+                .replace(/\[negrito\]/g, '<strong>')
+                .replace(/\[\/negrito\]/g, '</strong>')
+                .replace(/\[italico\]/g, '<em>')
+                .replace(/\[\/italico\]/g, '</em>')
+                .replace(/\[emoji\]/g, '😀'); // Substitua por um emoji real
+
+            return `<p class="texto">${paragrafoFormatado}</p>`;
+        });
+
+        // Une os parágrafos em uma única string
+        const textoFormatado = paragrafosFormatados.join('');
+        return textoFormatado;
+    }
+
     // Procura no json de noticia, e informa os dados do jogo
     async noticia() {
-
         try {
             const response = await fetch(this.urlNoticia);
             const json = await response.json();
             let noticia = json.jogo;
 
             for (let i = 0; i < noticia.length; i++) {
-                this.ordenaNoticia(noticia)
+                this.ordenaNoticia(noticia);
 
                 let header = noticia[i].titulo;
-                let paragrafo = noticia[i].noticia1;
+                let textoNoticia = noticia[i].noticia;
                 let data = noticia[i].data;
 
                 var divNoticia = document.createElement("div");
@@ -66,8 +90,12 @@ class Futbah {
                 img.textContent = noticia[i].img[0];
                 pData.textContent = data;
                 h2.textContent = header;
-                
-                pParagrafo.textContent = paragrafo.substring(0, 200) + "...";
+
+                // Chama a função para formatar o texto da notícia
+                // let paragrafo = await this.formatarTextoParaParagrafos(textoNoticia);
+                let paragrafo = textoNoticia;
+                pParagrafo.innerHTML = paragrafo.substring(0, 200) + "...";
+
                 a.textContent = `Saiba mais...`;
 
                 divNoticia.appendChild(img);
@@ -82,16 +110,16 @@ class Futbah {
                 divNoticia.classList.add(data);
                 a.classList.add("btn_noticia");
                 a.setAttribute("href", "noticia-single.html");
-                this.paragrafo.appendChild(divNoticia)
+                this.paragrafo.appendChild(divNoticia);
                 a.setAttribute("onclick", "futbah.clicando()");
                 a.classList.add(data);
-                if (i >= 2) { break }
+                if (i >= 2) { break; }
             }
-
         } catch (error) {
             // console.log(error)
         }
     }
+
 
     // Procura no Json de jogadores as informações do elenco
     async elenco() {
@@ -149,18 +177,18 @@ class Futbah {
             var i = 1;
             this.nomesE = Array[{}];
             json.elenco.map((jogador) => {
-                
+
                 classificacao = `
                 <tbody> `
-                        if (i < 5) {
-                            classificacao += `<tr class="promoted">`
-                        } else if (i > 17) {
-                            classificacao += `<tr class="relegated">`
-                        } else {
-                            classificacao += `<tr>`
-                        }
+                if (i < 5) {
+                    classificacao += `<tr class="promoted">`
+                } else if (i > 17) {
+                    classificacao += `<tr class="relegated">`
+                } else {
+                    classificacao += `<tr>`
+                }
 
-                        classificacao += `
+                classificacao += `
                         <td>${i}</td>
                         <td>${jogador.nome}</td>
                         <td>${jogador.classificacao}</td>
@@ -171,13 +199,20 @@ class Futbah {
                 `
                 document.getElementById("classificacao").innerHTML += classificacao;
                 i++;
-                
+
                 let novoObjeto = { nome: jogador.nome, classificacao: jogador.classificacao };
-                //console.log(novoObjeto); // pegar a lista da classificação
-                
+                // console.log(novoObjeto); // pegar a lista da classificação
+
 
             })
-            // console.log(json.elenco)
+
+            // let posicao = 1;
+            // console.log(`| Posição | Nome | Classificacao |`)
+            // console.log(`| ------- | ---- | ------------- |`)
+            // for (let i = 0; i < json.elenco.length; i++) {
+            //     console.log(`| ${posicao} | ${json.elenco[i].nome} | ${json.elenco[i].classificacao} |`)
+            //     posicao++
+            // }
             localStorage.setItem('elenco', JSON.stringify(json.elenco));
 
         } catch (err) {

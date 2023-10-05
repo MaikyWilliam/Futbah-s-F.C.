@@ -64,14 +64,15 @@
                 <label for="timeVermelho">Time Vermelho (separado por vírgulas):</label>
                 <input type="text" id="timeVermelho" name="timeVermelho" required><br><br>
 
-                <label for="noticia1">Introdução:</label>
-                <textarea id="noticia1" name="noticia1" style="max-width: 1060px;" required></textarea><br><br>
+                <label for="noticia">Resumo do Jogo:</label>
+                <div id="formatting-toolbar">
+                    <button id="bold-button"><strong>B</strong></button>
+                    <button id="italic-button"><em>I</em></button>
+                    <button id="emoji-button">😀</button>
+                  </div>
+                  <textarea id="noticia-textarea" style="max-width: 1060px;"></textarea>
+                  
 
-                <label for="noticia2">Desenvolvimento:</label>
-                <textarea id="noticia2" name="noticia2" style="max-width: 1060px;" required></textarea><br><br>
-
-                <label for="noticia3">Conclusão:</label>
-                <textarea id="noticia3" name="noticia3" style="max-width: 1060px;" required></textarea><br><br>
 
                 <button type="button" id="salvar-noticia">Salvar</button>
             </form>

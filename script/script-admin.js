@@ -26,6 +26,38 @@ if (!authToken) {
     }
 }
 
+// Obtém o elemento textarea
+const textarea = document.getElementById('noticia-textarea');
+
+// Função para aplicar formatação ao texto selecionado no textarea
+function applyFormatting(startTag, endTag) {
+    const startPos = textarea.selectionStart;
+    const endPos = textarea.selectionEnd;
+    const selectedText = textarea.value.substring(startPos, endPos);
+
+    const newText = startTag + selectedText + endTag;
+
+    textarea.setRangeText(newText, startPos, endPos, 'end');
+}
+
+// Botão de negrito
+document.getElementById('bold-button').addEventListener('click', function (e) {
+    e.preventDefault();
+    applyFormatting('<strong>', '</strong>');
+});
+
+// Botão de itálico
+document.getElementById('italic-button').addEventListener('click', function (e) {
+    e.preventDefault();
+    applyFormatting('<em>', '</em>');
+});
+
+// Botão de emoji
+document.getElementById('emoji-button').addEventListener('click', function (e) {
+    e.preventDefault();
+    applyFormatting('😀', '');
+});
+
 // Quando o botão "Salvar" for clicado
 $("#salvar-noticia").click(async function () {
     // Obtenha os valores dos campos do formulário
@@ -34,9 +66,7 @@ $("#salvar-noticia").click(async function () {
     var imagens = $("#img").val().split(',').map(image => "images/noticia/" + image.trim()); // Caminhos completos das imagens
     var timeAzul = $("#timeAzul").val().split(",");
     var timeVermelho = $("#timeVermelho").val().split(",");
-    var noticia1 = $("#noticia1").val();
-    var noticia2 = $("#noticia2").val();
-    var noticia3 = $("#noticia3").val();
+    var noticia = $("#noticia-textarea").val();
 
     // Carregue os dados JSON existentes do servidor (ou de onde você os obtém)
     let jsonData = await loadElencoJSON('list_noticia');
@@ -64,9 +94,7 @@ $("#salvar-noticia").click(async function () {
         "img": imagens, // Use a matriz de caminhos das imagens
         "timeAzul": timeAzul,
         "timeVermelho": timeVermelho,
-        "noticia1": noticia1,
-        "noticia2": noticia2,
-        "noticia3": noticia3
+        "noticia": noticia
     };
 
     jsonData.jogo.push(novaNoticia);
@@ -81,9 +109,6 @@ $("#salvar-noticia").click(async function () {
 
     // Simule um clique no elemento de ancoragem para iniciar o download
     a.click();
-
-    // Atualize o conteúdo da tabela ou faça o que for necessário com os dados
-    // (por exemplo, se você estiver exibindo as notícias em uma tabela)
 
     // Oculte o formulário após a adição da notícia
     $("#add-news-form").hide();
