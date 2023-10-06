@@ -75,7 +75,7 @@ class HttpClient {
     }
 
     async getVideos() {
-        // const date = this.getPreviousSaturday(new Date('2023-09-23 09:15:41 GMT-0300'));
+        // const date = this.getPreviousSaturday(new Date('2023-10-05 09:15:41 GMT-0300'));
         const date = this.getPreviousSaturday(new Date());
 
         const videoParams = {

@@ -102,7 +102,7 @@ async function getVideosSite(httpClient) {
     await httpClient.getChannelId();
     console.log('Chamando getVideos...');
     const videos = await httpClient.getVideos();
-
+    
     return videos;
 }
 

@@ -83,9 +83,7 @@ class Noticias {
 
             // Chama a função para formatar o texto da notícia
             console.log(this.noticia.noticia)
-            // const textoFormatado = await this.formatarTextoParaParagrafos(this.noticia.noticia);
-            const textoFormatado = this.noticia.noticia;
-            // const textoFormatado = this.noticia.noticia;
+            const textoFormatado = await this.formatarTextoParaParagrafos(this.noticia.noticia);
 
             // Define o conteúdo da div de texto da notícia com o texto formatado
             pNoticia.innerHTML = textoFormatado;

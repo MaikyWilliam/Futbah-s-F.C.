@@ -92,8 +92,8 @@ class Futbah {
                 h2.textContent = header;
 
                 // Chama a função para formatar o texto da notícia
-                // let paragrafo = await this.formatarTextoParaParagrafos(textoNoticia);
-                let paragrafo = textoNoticia;
+                let paragrafo = await this.formatarTextoParaParagrafos(textoNoticia);
+                // let paragrafo = textoNoticia;
                 pParagrafo.innerHTML = paragrafo.substring(0, 200) + "...";
 
                 a.textContent = `Saiba mais...`;

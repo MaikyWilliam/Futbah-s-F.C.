@@ -1,5 +1,310 @@
 {
-    "jogo": [
+  "jogo": [
+      {
+          "teveJogo": true,
+          "idNoticia": 1,
+          "data": "11/03/2023",
+          "titulo": "Jogo do dia 11/03/2023 termina em empate eletrizante",
+          "img": [
+              "images/noticia/foto-3.jpg"
+          ],
+          "timePreto": [
+              "Luiz",
+              "Lucas Dieckel",
+              "Edson Hoffmann",
+              "Matheus",
+              "Regis Rodrigues",
+              "Wagner Cavalheiro",
+              "Daniel",
+              "Diequison"
+          ],
+          "timeBranco": [
+              "Maiky William",
+              "Lucas Trindade",
+              "J.BUENO",
+              "Goldani",
+              "Luis Henrique Palave...",
+              "Adriano",
+              "Lucas",
+              "Cleverson"
+          ],
+          "noticia": "O jogo entre o time Preto e o time Branco foi um verdadeiro espetáculo de futebol. As equipes entraram em campo com escalações bastante competitivas, prometendo uma partida disputada e emocionante. No time Preto, Kuhn foi o goleiro titular, protegido pela dupla de zagueiros formada por Edson e Cleverson. O meio de campo contou com Wagner, Adriano e Prado, enquanto o ataque teve a presença de Diequison, Oseias, Daniel collet e Prado. Já o time Branco teve Jonatan C. no gol, Lucas Dieckel e Lucas Trindade na zaga, Jonas Bueno, Goldani e Luis Henrique no meio campo e Matheus, Regis e Rodrigo no ataque. O jogo começou com uma pressão do time Branco, que logo aos 1 minuto de jogo assustou Kuhn com um chute forte de Jonas Bueno. Aos 3 minutos, nova tentativa de Bueno, mas o goleiro do time Preto fez uma defesa espetacular."
+      },
+      {
+          "teveJogo": true,
+          "idNoticia": 2,
+          "data": "18/03/2023",
+          "titulo": "Vitoria do time BRANCO de virada e garante os 3 pontos",
+          "img": [
+              "images/noticia/foto-2.jpg"
+          ],
+          "timePreto": [
+              "Luiz",
+              "Lucas Dieckel",
+              "Edson Hoffmann",
+              "Matheus",
+              "Regis Rodrigues",
+              "Wagner Cavalheiro",
+              "Daniel",
+              "Diequison"
+          ],
+          "timeBranco": [
+              "Maiky William",
+              "Lucas Trindade",
+              "J.BUENO",
+              "Goldani",
+              "Luis Henrique Palave...",
+              "Adriano",
+              "Lucas",
+              "Cleverson"
+          ],
+          "noticia": "No último jogo do dia 18/03/2023, o time branco levou a melhor e venceu o time preto por 11 a 8. A partida foi bastante movimentada e com muitos gols, com destaque para as atuações de Daniel e Jonas Bueno. Time preto, Daniel da Silva abriu o placar aos 4 minutos de jogo, recebendo um belo passe de Lucas. Logo em seguida, Adriano ampliou o placar para o time preto, com passe de Maiky Wiliam. Aos 5 minutos, Lucas marcou o terceiro gol do time preto, novamente com passe de Maiky."
+      },
+      {
+          "teveJogo": true,
+          "idNoticia": 3,
+          "data": "25/03/2023",
+          "titulo": "Time PRETO domina e vence com tranquilidade o jogo",
+          "img": [
+              "images/noticia/foto-1.jpg"
+          ],
+          "timePreto": [
+              "Luiz",
+              "Lucas Dieckel",
+              "Edson Hoffmann",
+              "Matheus",
+              "Regis Rodrigues",
+              "Wagner Cavalheiro",
+              "Daniel",
+              "Diequison"
+          ],
+          "timeBranco": [
+              "Maiky William",
+              "Lucas Trindade",
+              "J.BUENO",
+              "Goldani",
+              "Luis Henrique Palave...",
+              "Adriano",
+              "Lucas",
+              "Cleverson"
+          ],
+          "noticia": "Jogo emocionante entre o time Preto e o time Branco, no dia 25 de março de 2023. A partida começou com defesas difíceis de ambos os goleiros, Luiz e Daniel da Silva, que se destacaram nos primeiros minutos do jogo. Mas foi o time Preto que abriu o placar aos 12 minutos, com um belo gol de Adriano, com passe de Cleverson."
+      },
+      {
+          "teveJogo": true,
+          "idNoticia": 4,
+          "data": "01/04/2023",
+          "titulo": "Time Branco vence em jogo emocionante",
+          "img": [
+              "images/noticia/jogo-dia-01-3.jpg"
+          ],
+          "timePreto": [
+              "Luiz",
+              "Lucas Dieckel",
+              "Edson Hoffmann",
+              "Matheus",
+              "Regis Rodrigues",
+              "Wagner Cavalheiro",
+              "Daniel",
+              "Diequison"
+          ],
+          "timeBranco": [
+              "Maiky William",
+              "Lucas Trindade",
+              "J.BUENO",
+              "Goldani",
+              "Luis Henrique Palave...",
+              "Adriano",
+              "Lucas",
+              "Cleverson"
+          ],
+          "noticia": "O jogo entre os times Preto e Branco, realizado no dia 01/04/2023, foi um verdadeiro show de gols e jogadas incríveis. Mesmo com a escalação de bons jogadores, o time Preto não conseguiu segurar o time Branco, que venceu a partida por 10 a 5."
+      },
+      {
+          "teveJogo": true,
+          "idNoticia": 5,
+          "data": "09/04/2023",
+          "titulo": "Time PRETO brilha na manhã deste sábado!",
+          "img": [
+              "images/noticia/jogo-dia-01-2.jpg",
+              "images/noticia/jogo-dia-01-3.jpg"
+          ],
+          "timePreto": [
+              "Luiz",
+              "Lucas Trindade",
+              "Adriano",
+              "Lucas",
+              "Goldani",
+              "Oseias",
+              "Daniel"
+          ],
+          "timeBranco": [
+              "Daniel da Silva",
+              "Lucas Dieckel",
+              "Luis Henrique",
+              "Matheus",
+              "Regis Rodrigues",
+              "Wagner Cavalheiro",
+              "Diequison"
+          ],
+          "noticia": "Em um jogo memorável, o time Preto goleou o time Branco por 11 a 1, em uma partida marcada pela atuação incrível de Daniel Collet. O jogo começou com bastante intensidade e logo no primeiro minuto de partida, Oseias abriu o placar para o time Preto, com um belo passe de Lucas. O segundo gol veio pouco depois, com Lucas marcando após assistência de Jubileu. O time Branco ainda descontou com Juninho, mas a partir daí foi só domínio do time Preto."
+      },
+      {
+          "teveJogo": true,
+          "idNoticia": 6,
+          "data": "13/04/2023",
+          "titulo": "Partida decisiva para a classificação entre os times Preto e Branco",
+          "img": [
+              "images/noticia/jogodia01-1.jpg"
+          ],
+          "timePreto": [
+              "Daniel da silva",
+              "Maiky William",
+              "Lucas Dieckel",
+              "J.BUENO",
+              "Goldani",
+              "Adriano",
+              "Lucas",
+              "Daniel",
+              "Cleverson"
+          ],
+          "timeBranco": [
+              "Luiz",
+              "Edson Hoffmann",
+              "Lucas Trindade",
+              "Wagner Cavalheiro",
+              "Regis Rodrigues",
+              "Matheus",
+              "Luis Henrique",
+              "Oseias"
+          ],
+          "noticia": "No dia 15/04/2023, os times Preto e Branco se enfrentarão em um jogo decisivo para definir a classificação no campeonato. Com apenas algumas rodadas restantes, cada ponto é valioso e as equipes entrarão em campo com tudo."
+      },
+      {
+          "teveJogo": true,
+          "idNoticia": 7,
+          "data": "15/04/2023",
+          "titulo": "Partida intensa e emocionante",
+          "img": [
+              "images/noticia/foto-3.jpg"
+          ],
+          "timePreto": [
+              "Daniel da silva",
+              "Maiky William",
+              "Lucas Dieckel",
+              "J.BUENO",
+              "Goldani",
+              "Adriano",
+              "Lucas",
+              "Daniel",
+              "Cleverson"
+          ],
+          "timeBranco": [
+              "Luiz",
+              "Edson Hoffmann",
+              "Lucas Trindade",
+              "Wagner Cavalheiro",
+              "Regis Rodrigues",
+              "Matheus",
+              "Luis Henrique",
+              "Oseias"
+          ],
+          "noticia": "O jogo que parou a cidade na manhã deste sábado foi simplesmente eletrizante! A disputa foi entre o Time Preto e o Time Branco, com lances emocionantes e muitos gols para ambos os lados. O clima no estádio era de pura adrenalina e tensão, com a torcida de ambos os times vibrando a cada jogada. O jogo começou bastante acirrado, com desarmes e defesas difíceis de ambos os goleiros. Logo no início, o Time Branco abriu o placar com um gol de Wagner Cavalheiro, que recebeu um belo passe de Oseias, deixando a torcida em êxtase. Mas o Time Preto não se abateu e respondeu rapidamente com um gol de Daniel Collet, deixando a torcida alvoroçada."
+      },
+      {
+          "teveJogo": true,
+          "idNoticia": 8,
+          "data": "22/04/2023",
+          "titulo": "Jogo eletrizante termina com vitória do time PRETO por 11 a 7",
+          "img": [
+              "images/noticia/jogo22-04.jpeg",
+              "images/noticia/jogo-dia-01-3.jpg"
+          ],
+          "timePreto": [
+              "Daniel da silva",
+              "Maiky William",
+              "Lucas Dieckel",
+              "Wagner Cavalheiro",
+              "J.BUENO",
+              "Goldani",
+              "Matheus",
+              "Daniel",
+              "Cleverson"
+          ],
+          "timeBranco": [
+              "Luiz",
+              "Edson Hoffmann",
+              "Lucas Trindade",
+              "Luis Henrique Palave...",
+              "Adriano",
+              "Regis Rodrigues",
+              "Lucas",
+              "Diequison",
+              "Oseias"
+          ],
+          "noticia": "Em uma manhã ensolarada de sábado, as equipes PRETO e BRANCO se enfrentaram em um verdadeiro duelo de titãs no estádio municipal. Com uma escalação forte e muita determinação, os times entraram em campo dispostos a dar o melhor de si. Desde o começo, o jogo foi emocionante, com lances de tirar o fôlego e muita intensidade. O time BRANCO começou bem, com desarmes de Luis Henrique e Lucas Dieckel, mas logo foi o time PRETO quem dominou a partida, com um gol de Lucas, seguido por mais quatro gols espetaculares do artilheiro."
+      },
+      {
+          "teveJogo": true,
+          "idNoticia": 9,
+          "data": "29/04/2023",
+          "titulo": "Time Preto vence Time Branco por 8 a 5",
+          "img": [
+              "images/noticia/Foto1-29-04.jpeg",
+              "images/noticia/Foto2-29-04.jpeg"
+          ],
+          "timePreto": [
+              "Luciano",
+              "Maiky William",
+              "J.BUENO",
+              "Adriano",
+              "Regis Rodrigues",
+              "Goldani",
+              "Lucas Henrique",
+              "Cleverson"
+          ],
+          "timeBranco": [
+              "Daniel da silva",
+              "Lucas Trindade",
+              "Edson Hoffmann",
+              "Luis Henrique",
+              "Daniel",
+              "Diequison",
+              "Oseias"
+          ],
+          "noticia": "No jogo da 16ª rodada do campeonato, o Time Preto venceu o Time Branco por 8 a 5. O jogo foi emocionante do início ao fim, com muitos gols e lances de destaque. \nO Time Preto saiu na frente logo no início, com um gol de Maiky William. O Time Branco reagiu e empatou o jogo com gols de Daniel e Oseias. A partida continuou equilibrada, com ambas as equipes buscando o gol da vitória. \nNo final, o Time Preto conseguiu se destacar e marcou mais três gols, garantindo a vitória por 8 a 5."
+      },
+      {
+          "teveJogo": true,
+          "idNoticia": 10,
+          "data": "06/05/2023",
+          "titulo": "Time Branco vence jogo emocionante",
+          "img": [
+              "images/noticia/Foto1-06-05.jpeg",
+              "images/noticia/Foto1-29-04.jpeg",
+              "images/noticia/Foto2-29-04.jpeg"
+          ],
+          "timePreto": [
+              "Luciano",
+              "Maiky William",
+              "J.BUENO",
+              "Adriano",
+              "Regis Rodrigues",
+              "Goldani",
+              "Lucas Henrique",
+              "Cleverson"
+          ],
+          "timeBranco": [
+              "Daniel da silva",
+              "Lucas Trindade",
+              "Edson Hoffmann",
+              "Luis Henrique",
+              "Daniel",
+              "Diequison",
+              "Oseias"
+          ],
+          "noticia": "O jogo entre o Time Preto e o Time Branco no dia 06/05/2023 foi uma verdadeira batalha em campo. As duas equipes entraram em campo determinadas a vencer, e o jogo foi repleto de emoções. \nO Time Branco abriu o placar com um gol de Luis Henrique, que recebeu um belo passe de Daniel. O Time Preto não demorou a responder e empatou o jogo com um gol de Maiky William. \nA partida continuou equilibrada, com ambas as equipes criando chances de gol."
+      },
       {
         "teveJogo": true,
         "idNoticia": 11,
@@ -29,311 +334,6 @@
           "William"
         ],
         "noticia": "A partida começou com um ritmo frenético, e Lucão do Time VERMELHO abriu o placar com um gol de falta. Logo em seguida, Wagner Cavalheiro aumentou a vantagem com um belo gol para o Time VERMELHO. O Time AZUL não se deixou abalar e respondeu com um gol de Dias, aproveitando um passe de Goldani. Jonas Bueno, do Time AZUL, empatou o jogo com seu gol, mas a igualdade foi curta, pois Daniel Collet marcou novamente para o Time VERMELHO. \n Jonas Bueno não desistiu e marcou mais um gol para o Time AZUL, seguido por Goldani, que aumentou a vantagem para sua equipe. No entanto, Lucão não ficou atrás e marcou seu segundo gol para o Time VERMELHO, trazendo o jogo de volta à igualdade. Maiky, com assistência de Dias, marcou o sexto gol para o Time AZUL, mas Lucão estava imparável e registrou mais dois gols consecutivos, completando um impressionante poker de gols. \n O jogo foi um espetáculo do começo ao fim, com uma série de reviravoltas e grandes jogadas por ambas as equipes. No final, o empate em 6 a 6 refletiu a intensidade e a qualidade do confronto, deixando os torcedores em êxtase. A atuação soberba de Lucão, com seus quatro gols, foi inegavelmente o ponto alto desta partida que entrará para a história do futebol."
-      },
-      {
-        "teveJogo": true,
-        "idNoticia": 10,
-        "data": "06/05/2023",
-        "titulo": "Jogo da 17ª rodada: Time Preto 7 x 8 Time Branco",
-        "img": [
-          "images/noticia/Foto1-06-05.jpeg",
-          "images/noticia/Foto2-06-05.jpeg"
-        ],
-        "timePreto": [
-          "Daniel da silva",
-          "Lucas Trindade",
-          "Wagner Cavalheiro",
-          "Luis Henrique ",
-          "Adriano",
-          "Lucas Henrique",
-          "Daniel",
-          "Diequison"
-        ],
-        "timeBranco": [
-          "Luiz",
-          "Maiky William",
-          "Edson Hoffmann",
-          "J.BUENO",
-          "Matheus",
-          "Goldani",
-          "Cleverson",
-          "William"
-        ],
-        "noticia": "Em uma partida emocionante, o Time Branco saiu vitorioso do confronto contra o Time Preto, com um placar de 8 a 7. O jogo foi marcado por muitos gols e lances importantes, que mantiveram os torcedores vidrados no campo do início ao fim. Logo no começo da partida, o Time Branco abriu o placar com um gol de William, seguido por mais dois gols de Matheus e Goldani, ambos com assistências de Maiky William e Matheus, respectivamente. O Time Preto não se abateu e conseguiu marcar dois gols em sequência, com Daniel Collet, com passe de Luis Henrique, e Adriano. \n O Time Branco continuou pressionando, e Jonas Bueno marcou mais um gol, com assistência de Cleverson. O Time Preto respondeu com mais dois gols, marcados por Lucas Henrique, que ainda marcou mais dois gols na partida. O Time Branco ainda marcou mais três gols, com destaque para mais um de William, agora com assistência de Jonas Bueno. \n O goleiro Luiz foi o grande destaque do jogo, com uma atuação impecável, que lhe rendeu a nota 9,30 de 10 e o título de craque da partida. Já o artilheiro do jogo foi Lucas Henrique, com 4 gols marcados. Maiky William se destacou com 2 desarmes e Daniel Collet com 1 assistência, enquanto Diequison teve uma atuação abaixo do esperado, com nota 6,75 de 10."
-      },
-      {
-        "teveJogo": true,
-        "idNoticia": 9,
-        "data": "29/04/2023",
-        "titulo": "Jogo da 16ª rodada: Time Preto vence Time Branco por 8 a 5",
-        "img": [
-          "images/noticia/Foto1-29-04.jpeg",
-          "images/noticia/Foto2-29-04.jpeg"
-        ],
-        "timePreto": [
-          "Luciano",
-          "Maiky William",
-          "J.BUENO",
-          "Adriano",
-          "Regis Rodrigues",
-          "Goldani",
-          "Lucas Henrique",
-          "Cleverson"
-        ],
-        "timeBranco": [
-          "Daniel da silva",
-          "Lucas Trindade",
-          "Edson Hoffmann",
-          "Luis Henrique",
-          "Daniel",
-          "Diequison",
-          "Oseias"
-        ],
-        "noticia": "No jogo da 16ª rodada do campeonato, o Time Preto venceu o Time Branco por 8 a 5. O jogo foi emocionante do início ao fim, com muitos gols e lances de destaque. O Time Preto abriu o placar com um gol de Lucas Henrique, e o Time Branco empatou com um gol de Oseias, passe de Lucas Trindade. Daniel Collet marcou o segundo gol do Time Branco, mas o Time Preto reagiu com gols de Goldani, Jonas Bueno e Cleverson, todos com assistências de Lucas Henrique. \n No segundo tempo, o Time Branco voltou a marcar com gols de Luis Henrique e Edson Hoffmann, mas o Time Preto continuou pressionando e marcou mais três gols, com Jonas Bueno (duas vezes) e Goldani novamente. Os destaques da partida foram Vitor, que fez várias defesas importantes e foi o Paredão do jogo; Jonas Bueno, que marcou três gols e foi eleito o Craque da partida; Maiky William, que fez sete desarmes e foi o Xerifão do jogo; Lucas Henrique, que deu duas assistências e foi o Garçon da partida; e Diequison, que teve uma atuação discreta e foi eleito o pereba da partida. \n Com essa vitória, o Time Preto se aproxima dos líderes do campeonato e mantém suas chances de chegar à fase final da competição. Já o Time Branco segue na parte de baixo da tabela e precisa melhorar seu desempenho nas próximas rodadas para evitar o rebaixamento."
-      },
-      {
-        "teveJogo": true,
-        "idNoticia": 8,
-        "data": "22/04/2023",
-        "titulo": "Jogo eletrizante termina com vitória do time PRETO por 11 a 7",
-        "img": [
-          "images/noticia/jogo22-04.jpeg",
-          "images/noticia/jogo-dia-01-3.jpg"
-        ],
-        "timePreto": [
-          "Daniel da silva",
-          "Maiky William",
-          "Lucas Dieckel",
-          "Wagner Cavalheiro",
-          "J.BUENO",
-          "Goldani",
-          "Matheus",
-          "Daniel",
-          "Cleverson"
-        ],
-        "timeBranco": [
-          "Luiz",
-          "Edson Hoffmann",
-          "Lucas Trindade",
-          "Luis Henrique Palave...",
-          "Adriano",
-          "Regis Rodrigues",
-          "Lucas",
-          "Diequison",
-          "Oseias"
-        ],
-        "noticia": "Em uma manhã ensolarada de sábado, as equipes PRETO e BRANCO se enfrentaram em um verdadeiro duelo de titãs no estádio municipal. Com uma escalação forte e muita determinação, os times entraram em campo dispostos a dar o melhor de si. Desde o começo, o jogo foi emocionante, com lances de tirar o fôlego e muita intensidade. O time BRANCO começou bem, com desarmes de Luis Henrique e Lucas Dieckel, mas logo foi o time PRETO quem dominou a partida, com um gol de Lucas, seguido por mais quatro gols espetaculares do artilheiro."
-      },
-      {
-        "teveJogo": true,
-        "idNoticia": 7,
-        "data": "15/04/2023",
-        "titulo": "Partida intensa e emocionante",
-        "img": [
-          "images/noticia/foto-3.jpg"
-        ],
-        "timePreto": [
-          "Daniel da silva",
-          "Maiky William",
-          "Lucas Dieckel",
-          "J.BUENO",
-          "Goldani",
-          "Adriano",
-          "Lucas",
-          "Daniel",
-          "Cleverson"
-        ],
-        "timeBranco": [
-          "Luiz",
-          "Edson Hoffmann",
-          "Lucas Trindade",
-          "Wagner Cavalheiro",
-          "Regis Rodrigues",
-          "Matheus",
-          "Luis Henrique",
-          "Oseias"
-        ],
-        "noticia": "O jogo que parou a cidade na manhã deste sábado foi simplesmente eletrizante! A disputa foi entre o Time Preto e o Time Branco, com lances emocionantes e muitos gols para ambos os lados. O clima no estádio era de pura adrenalina e tensão, com a torcida de ambos os times vibrando a cada jogada. O jogo começou bastante acirrado, com desarmes e defesas difíceis de ambos os goleiros. Logo no início, o Time Branco abriu o placar com um gol de Wagner Cavalheiro, que recebeu um belo passe de Oseias, deixando a torcida em êxtase. Mas o Time Preto não se abateu e respondeu rapidamente com um gol de Daniel Collet, deixando a torcida alvoroçada."
-      },
-      {
-        "teveJogo": true,
-        "idNoticia": 6,
-        "data": "13/04/2023",
-        "titulo": "Partida decisiva para a classificação entre os times Preto e Branco",
-        "img": [
-          "images/noticia/jogodia01-1.jpg"
-        ],
-        "timePreto": [
-          "Daniel da silva",
-          "Maiky William",
-          "Lucas Dieckel",
-          "J.BUENO",
-          "Goldani",
-          "Adriano",
-          "Lucas",
-          "Daniel",
-          "Cleverson"
-        ],
-        "timeBranco": [
-          "Luiz",
-          "Edson Hoffmann",
-          "Lucas Trindade",
-          "Wagner Cavalheiro",
-          "Regis Rodrigues",
-          "Matheus",
-          "Luis Henrique",
-          "Oseias"
-        ],
-        "noticia": "No dia 15/04/2023, os times Preto e Branco se enfrentarão em um jogo decisivo para definir a classificação no campeonato. Com apenas algumas rodadas restantes, cada ponto é valioso e as equipes entrarão em campo com tudo."
-      },
-      {
-        "teveJogo": true,
-        "idNoticia": 5,
-        "data": "09/04/2023",
-        "titulo": "Time PRETO brilha na manhã deste sábado!",
-        "img": [
-          "images/noticia/jogo-dia-01-2.jpg",
-          "images/noticia/jogo-dia-01-3.jpg"
-        ],
-        "timePreto": [
-          "Luiz",
-          "Lucas Trindade",
-          "Adriano",
-          "Lucas",
-          "Goldani",
-          "Oseias",
-          "Daniel"
-        ],
-        "timeBranco": [
-          "Daniel da Silva",
-          "Lucas Dieckel",
-          "Luis Henrique",
-          "Matheus",
-          "Regis Rodrigues",
-          "Wagner Cavalheiro",
-          "Diequison"
-        ],
-        "noticia": "Em um jogo memorável, o time Preto goleou o time Branco por 11 a 1, em uma partida marcada pela atuação incrível de Daniel Collet. O jogo começou com bastante intensidade e logo no primeiro minuto de partida, Oseias abriu o placar para o time Preto, com um belo passe de Lucas. O segundo gol veio pouco depois, com Lucas marcando após assistência de Jubileu. O time Branco ainda descontou com Juninho, mas a partir daí foi só domínio do time Preto."
-      },
-      {
-        "teveJogo": true,
-        "idNoticia": 4,
-        "data": "01/04/2023",
-        "titulo": "Time Branco vence em jogo emocionante",
-        "img": [
-          "images/noticia/jogo-dia-01-3.jpg"
-        ],
-        "timePreto": [
-          "Luiz",
-          "Lucas Dieckel",
-          "Edson Hoffmann",
-          "Matheus",
-          "Regis Rodrigues",
-          "Wagner Cavalheiro",
-          "Daniel",
-          "Diequison"
-        ],
-        "timeBranco": [
-          "Maiky William",
-          "Lucas Trindade",
-          "J.BUENO",
-          "Goldani",
-          "Luis Henrique Palave...",
-          "Adriano",
-          "Lucas",
-          "Cleverson"
-        ],
-        "noticia": "O jogo entre os times Preto e Branco, realizado no dia 01/04/2023, foi um verdadeiro show de gols e jogadas incríveis. Mesmo com a escalação de bons jogadores, o time Preto não conseguiu segurar o time Branco, que venceu a partida por 10 a 5."
-      },
-      {
-        "teveJogo": true,
-        "idNoticia": 3,
-        "data": "25/03/2023",
-        "titulo": "Time PRETO domina e vence com tranquilidade o jogo",
-        "img": [
-          "images/noticia/foto-1.jpg"
-        ],
-        "timePreto": [
-          "Luiz",
-          "Lucas Dieckel",
-          "Edson Hoffmann",
-          "Matheus",
-          "Regis Rodrigues",
-          "Wagner Cavalheiro",
-          "Daniel",
-          "Diequison"
-        ],
-        "timeBranco": [
-          "Maiky William",
-          "Lucas Trindade",
-          "J.BUENO",
-          "Goldani",
-          "Luis Henrique Palave...",
-          "Adriano",
-          "Lucas",
-          "Cleverson"
-        ],
-        "noticia": "Jogo emocionante entre o time Preto e o time Branco, no dia 25 de março de 2023. A partida começou com defesas difíceis de ambos os goleiros, Luiz e Daniel da Silva, que se destacaram nos primeiros minutos do jogo. Mas foi o time Preto que abriu o placar aos 12 minutos, com um belo gol de Adriano, com passe de Cleverson."
-      },
-      {
-        "teveJogo": true,
-        "idNoticia": 2,
-        "data": "18/03/2023",
-        "titulo": "Vitoria do time BRANCO de virada e garante os 3 pontos",
-        "img": [
-          "images/noticia/foto-2.jpg"
-        ],
-        "timePreto": [
-          "Luiz",
-          "Lucas Dieckel",
-          "Edson Hoffmann",
-          "Matheus",
-          "Regis Rodrigues",
-          "Wagner Cavalheiro",
-          "Daniel",
-          "Diequison"
-        ],
-        "timeBranco": [
-          "Maiky William",
-          "Lucas Trindade",
-          "J.BUENO",
-          "Goldani",
-          "Luis Henrique Palave...",
-          "Adriano",
-          "Lucas",
-          "Cleverson"
-        ],
-        "noticia": "No último jogo do dia 18/03/2023, o time branco levou a melhor e venceu o time preto por 11 a 8. A partida foi bastante movimentada e com muitos gols, com destaque para as atuações de Daniel e Jonas Bueno. Time preto, Daniel da Silva abriu o placar aos 4 minutos de jogo, recebendo um belo passe de Lucas. Logo em seguida, Adriano ampliou o placar para o time preto, com passe de Maiky Wiliam. Aos 5 minutos, Lucas marcou o terceiro gol do time preto, novamente com passe de Maiky."
-      },
-      {
-        "teveJogo": true,
-        "idNoticia": 1,
-        "data": "11/03/2023",
-        "titulo": "Jogo do dia 11/03/2023 termina em empate eletrizante",
-        "img": [
-          "images/noticia/foto-3.jpg"
-        ],
-        "timePreto": [
-          "Luiz",
-          "Lucas Dieckel",
-          "Edson Hoffmann",
-          "Matheus",
-          "Regis Rodrigues",
-          "Wagner Cavalheiro",
-          "Daniel",
-          "Diequison"
-        ],
-        "timeBranco": [
-          "Maiky William",
-          "Lucas Trindade",
-          "J.BUENO",
-          "Goldani",
-          "Luis Henrique Palave...",
-          "Adriano",
-          "Lucas",
-          "Cleverson"
-        ],
-        "noticia": "O jogo entre o time Preto e o time Branco foi um verdadeiro espetáculo de futebol. As equipes entraram em campo com escalações bastante competitivas, prometendo uma partida disputada e emocionante. No time Preto, Kuhn foi o goleiro titular, protegido pela dupla de zagueiros formada por Edson e Cleverson. O meio de campo contou com Wagner, Adriano e Prado, enquanto o ataque teve a presença de Diequison, Oseias, Daniel collet e Prado. Já o time Branco teve Jonatan C. no gol, Lucas Dieckel e Lucas Trindade na zaga, Jonas Bueno, Goldani e Luis Henrique no meio campo e Matheus, Regis e Rodrigo no ataque. O jogo começou com uma pressão do time Branco, que logo aos 1 minuto de jogo assustou Kuhn com um chute forte de Jonas Bueno. Aos 3 minutos, nova tentativa de Bueno, mas o goleiro do time Preto fez uma defesa espetacular."
       }
-    ]
-  }
+  ]
+}
