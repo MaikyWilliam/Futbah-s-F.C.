@@ -182,7 +182,7 @@ class Futbah {
                 <tbody> `
                 if (i < 5) {
                     classificacao += `<tr class="promoted">`
-                } else if (i > 17) {
+                } else if (i > 14) {
                     classificacao += `<tr class="relegated">`
                 } else {
                     classificacao += `<tr>`
