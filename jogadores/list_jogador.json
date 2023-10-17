@@ -1,298 +1,298 @@
 {
-    "elenco": [
-      {
-        "id": 1,
-        "nome": "Maiky William",
-        "posicao": "Zagueiro",
-        "numero": "29",
-        "img": "images/elenco/Maiky William.jpg",
-        "classificacao": 63,
-        "gol": "15",
-        "assistencia": "10",
-        "desarmes": "50",
-        "campeao": {
-          "class": "campeao",
-          "qtd": 2,
-          "ano": [
-            "2º Semestre de 2021",
-            " 1º Semestre de 2022"
-          ]
-        }
-      },
-      {
-        "id": 2,
-        "nome": "Jonas Bueno",
-        "posicao": "Meia",
-        "numero": "10",
-        "img": "images/elenco/Jonas Bueno.jpg",
-        "classificacao": 70,
-        "gol": "45",
-        "assistencia": "42",
-        "desarmes": "4",
-        "campeao": {
-          "class": "campeao",
-          "qtd": 2,
-          "ano": [
-            "2º Semestre de 2022",
-            "1º Semestre de 2023"
-          ]
-        }
-      },
-      {
-        "id": 3,
-        "nome": "Lucas Dieckel",
-        "posicao": "Zagueiro",
-        "numero": "16",
-        "img": "images/elenco/Lucas Dieckel.jpg",
-        "classificacao": 46,
-        "gol": "7",
-        "assistencia": "2",
-        "desarmes": "31",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 4,
-        "nome": "Luiz",
-        "posicao": "Goleiro",
-        "numero": "1",
-        "img": "images/elenco/Luiz.jpg",
-        "classificacao": 35,
-        "gol": "0",
-        "assistencia": "5",
-        "desarmes": "2",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 5,
-        "nome": "Daniel da Silva",
-        "posicao": "Goleiro",
-        "numero": "01",
-        "img": "images/elenco/Daniel da Silva.jpeg",
-        "classificacao": 37,
-        "gol": "0",
-        "assistencia": "2",
-        "desarmes": "1",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 6,
-        "nome": "Lucas Trindade",
-        "posicao": "Zagueiro",
-        "numero": "4",
-        "img": "images/elenco/Lucas Trindade.jpg",
-        "classificacao": 46,
-        "gol": "2",
-        "assistencia": "6",
-        "desarmes": "29",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 7,
-        "nome": "Daniel Collet",
-        "posicao": "Atacante",
-        "numero": "10",
-        "img": "images/elenco/default.jpeg",
-        "classificacao": 51,
-        "gol": "57",
-        "assistencia": "25",
-        "desarmes": "7",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 8,
-        "nome": "Luis Henrique",
-        "posicao": "Meia",
-        "numero": "5",
-        "img": "images/elenco/Luis Henrique.jpg",
-        "classificacao": 45,
-        "gol": "19",
-        "assistencia": "28",
-        "desarmes": "11",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 9,
-        "nome": "Adriando",
-        "posicao": "Meia",
-        "numero": "5",
-        "img": "images/elenco/default.jpeg",
-        "classificacao": 52,
-        "gol": "14",
-        "assistencia": "13",
-        "desarmes": "15",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 10,
-        "nome": "Luciano do Prado",
-        "posicao": "Atacante",
-        "numero": "5",
-        "img": "images/elenco/default.jpeg",
-        "classificacao": 29,
-        "gol": "14",
-        "assistencia": "10",
-        "desarmes": "1",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 11,
-        "nome": "R. Goldani",
-        "posicao": "Meia",
-        "numero": "7",
-        "img": "images/elenco/Renato Goldani.jpg",
-        "classificacao": 49,
-        "gol": "21",
-        "assistencia": "9",
-        "desarmes": "2",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 12,
-        "nome": "Edson Hoffmann",
-        "posicao": "Zagueiro",
-        "numero": "2",
-        "img": "images/elenco/Edson.jpg",
-        "classificacao": 39,
-        "gol": "7",
-        "assistencia": "3",
-        "desarmes": "11",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 13,
-        "nome": "Wagner Cavalheiro",
-        "posicao": "meia",
-        "numero": "5",
-        "img": "images/elenco/Wagner.jpg",
-        "classificacao": 37,
-        "gol": "29",
-        "assistencia": "16",
-        "desarmes": "19",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 15,
-        "nome": "Lucas Henrique",
-        "posicao": "Meia",
-        "numero": "5",
-        "img": "images/elenco/Lucas.jpg",
-        "classificacao": 41,
-        "gol": "50",
-        "assistencia": "20",
-        "desarmes": "10",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 16,
-        "nome": "Lucão",
-        "posicao": "Atacante",
-        "numero": "8",
-        "img": "images/elenco/default.jpeg",
-        "classificacao": 24,
-        "gol": "26",
-        "assistencia": "9",
-        "desarmes": "5",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 17,
-        "nome": "Regis Rodrigues",
-        "posicao": "Meia",
-        "numero": "8",
-        "img": "images/elenco/Regis.jpg",
-        "classificacao": 10,
-        "gol": "0",
-        "assistencia": "0",
-        "desarmes": "2",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 18,
-        "nome": "Cleverson",
-        "posicao": "Meia",
-        "numero": "8",
-        "img": "images/elenco/Cleverson.jpg",
-        "classificacao": 35,
-        "gol": "13",
-        "assistencia": "12",
-        "desarmes": "2",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
-      },
-      {
-        "id": 29,
-        "nome": "Higor Dias",
-        "posicao": "Atacante",
-        "numero": "99",
-        "img": "images/elenco/Dias.jpg",
-        "classificacao": 23,
-        "gol": "13",
-        "assistencia": "4",
-        "desarmes": "0",
-        "campeao": {
-          "class": "nao",
-          "qtd": 0,
-          "ano": null
-        }
+  "elenco": [
+    {
+      "id": 1,
+      "nome": "Maiky William",
+      "posicao": "Zagueiro",
+      "numero": "29",
+      "img": "images/elenco/Maiky William.jpg",
+      "classificacao": 63,
+      "gol": "15",
+      "assistencia": "10",
+      "desarmes": "50",
+      "campeao": {
+        "class": "campeao",
+        "qtd": 2,
+        "ano": [
+          "2º Semestre de 2021",
+          " 1º Semestre de 2022"
+        ]
       }
-    ]
-  }
+    },
+    {
+      "id": 2,
+      "nome": "Jonas Bueno",
+      "posicao": "Meia",
+      "numero": "10",
+      "img": "images/elenco/Jonas Bueno.jpg",
+      "classificacao": 73,
+      "gol": "45",
+      "assistencia": "45",
+      "desarmes": "4",
+      "campeao": {
+        "class": "campeao",
+        "qtd": 2,
+        "ano": [
+          "2º Semestre de 2022",
+          "1º Semestre de 2023"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Lucas Dieckel",
+      "posicao": "Zagueiro",
+      "numero": "16",
+      "img": "images/elenco/Lucas Dieckel.jpg",
+      "classificacao": 46,
+      "gol": "8",
+      "assistencia": "2",
+      "desarmes": "31",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Luiz",
+      "posicao": "Goleiro",
+      "numero": "1",
+      "img": "images/elenco/Luiz.jpg",
+      "classificacao": 35,
+      "gol": "0",
+      "assistencia": "5",
+      "desarmes": "2",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Daniel da Silva",
+      "posicao": "Goleiro",
+      "numero": "01",
+      "img": "images/elenco/Daniel da Silva.jpeg",
+      "classificacao": 40,
+      "gol": "0",
+      "assistencia": "2",
+      "desarmes": "1",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 6,
+      "nome": "Lucas Trindade",
+      "posicao": "Zagueiro",
+      "numero": "4",
+      "img": "images/elenco/Lucas Trindade.jpg",
+      "classificacao": 49,
+      "gol": "3",
+      "assistencia": "7",
+      "desarmes": "29",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 7,
+      "nome": "Daniel Collet",
+      "posicao": "Atacante",
+      "numero": "10",
+      "img": "images/elenco/default.jpeg",
+      "classificacao": 51,
+      "gol": "57",
+      "assistencia": "25",
+      "desarmes": "7",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 8,
+      "nome": "Luis Henrique",
+      "posicao": "Meia",
+      "numero": "5",
+      "img": "images/elenco/Luis Henrique.jpg",
+      "classificacao": 48,
+      "gol": "19",
+      "assistencia": "30",
+      "desarmes": "11",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 9,
+      "nome": "Adriando",
+      "posicao": "Meia",
+      "numero": "5",
+      "img": "images/elenco/default.jpeg",
+      "classificacao": 52,
+      "gol": "14",
+      "assistencia": "13",
+      "desarmes": "15",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 10,
+      "nome": "Luciano do Prado",
+      "posicao": "Atacante",
+      "numero": "5",
+      "img": "images/elenco/default.jpeg",
+      "classificacao": 29,
+      "gol": "14",
+      "assistencia": "10",
+      "desarmes": "1",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 11,
+      "nome": "R. Goldani",
+      "posicao": "Meia",
+      "numero": "7",
+      "img": "images/elenco/Renato Goldani.jpg",
+      "classificacao": 52,
+      "gol": "21",
+      "assistencia": "9",
+      "desarmes": "2",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 12,
+      "nome": "Edson Hoffmann",
+      "posicao": "Zagueiro",
+      "numero": "2",
+      "img": "images/elenco/Edson.jpg",
+      "classificacao": 39,
+      "gol": "8",
+      "assistencia": "3",
+      "desarmes": "11",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 13,
+      "nome": "Wagner Cavalheiro",
+      "posicao": "meia",
+      "numero": "5",
+      "img": "images/elenco/Wagner.jpg",
+      "classificacao": 37,
+      "gol": "31",
+      "assistencia": "16",
+      "desarmes": "19",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 14,
+      "nome": "Lucas Henrique",
+      "posicao": "Meia",
+      "numero": "5",
+      "img": "images/elenco/Lucas.jpg",
+      "classificacao": 41,
+      "gol": "51",
+      "assistencia": "22",
+      "desarmes": "10",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 15,
+      "nome": "Lucão",
+      "posicao": "Atacante",
+      "numero": "8",
+      "img": "images/elenco/default.jpeg",
+      "classificacao": 27,
+      "gol": "31",
+      "assistencia": "9",
+      "desarmes": "5",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 16,
+      "nome": "Regis Rodrigues",
+      "posicao": "Meia",
+      "numero": "8",
+      "img": "images/elenco/Regis.jpg",
+      "classificacao": 10,
+      "gol": "0",
+      "assistencia": "0",
+      "desarmes": "2",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 17,
+      "nome": "Cleverson",
+      "posicao": "Meia",
+      "numero": "8",
+      "img": "images/elenco/Cleverson.jpg",
+      "classificacao": 38,
+      "gol": "16",
+      "assistencia": "13",
+      "desarmes": "2",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    },
+    {
+      "id": 18,
+      "nome": "Higor Dias",
+      "posicao": "Atacante",
+      "numero": "99",
+      "img": "images/elenco/Dias.jpg",
+      "classificacao": 23,
+      "gol": "14",
+      "assistencia": "5",
+      "desarmes": "0",
+      "campeao": {
+        "class": "nao",
+        "qtd": 0,
+        "ano": null
+      }
+    }
+  ]
+}
