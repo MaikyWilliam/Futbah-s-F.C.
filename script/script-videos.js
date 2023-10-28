@@ -98,10 +98,10 @@ function recuperarComExpiracao(chave) {
 async function getVideosSite(httpClient) {
     console.log('Chamando Login...');
     await httpClient.login();
-    console.log('Chamando getChannelId...');
-    await httpClient.getChannelId();
-    console.log('Chamando getVideos...');
-    const videos = await httpClient.getVideos();
+    console.log('Chamando postChannelId...');
+    await httpClient.postChannelId();
+    console.log('Chamando postVideos...');
+    const videos = await httpClient.postVideos();
     
     return videos;
 }

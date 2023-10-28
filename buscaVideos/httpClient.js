@@ -52,30 +52,25 @@ class HttpClient {
 
     }
 
-    async getChannelId() {
-        // Defina os parâmetros em um objeto
-        const queryParams = {
-            establishmentName: 'FUTHAUS7 É US GURI'
+    async postChannelId() {
+        const requestData = {
+            establishmentName: "FUTHAUS7 É US GURI"
         };
 
-        // Crie a URL da solicitação GET com a string de consulta
-        const baseUrl = this.baseUrl + '/channels';
-        const queryString = await this.objectToQueryString(queryParams);
-        const url = `${baseUrl}?${queryString}`;
-
+        const url = this.baseUrl + "/channels"; // URL de destino
+    
         try {
-            let data = await this.makeHttpRequest(url, "GET", null, this.token);
+            const data = await this.makeHttpRequest(url, "POST", requestData, this.token);
             this.quadra = data[0].label;
             this.channelId = data[0].value;
         } catch (error) {
-            console.log('Erro na busca de ChannelId:', data);
+            console.log('Erro na busca de ChannelId:', error);
         }
-
-
     }
 
-    async getVideos() {
-        // const date = this.getPreviousSaturday(new Date('2023-10-05 09:15:41 GMT-0300'));
+
+    async postVideos() {
+        // Obtém a data atual
         const date = this.getPreviousSaturday(new Date());
 
         const videoParams = {
@@ -86,53 +81,38 @@ class HttpClient {
             day: date.date, 
             hour: date.hour
         };
-
-        // Crie a URL da solicitação GET com a string de consulta
-        const baseUrl = this.baseUrl + '/videos';
-        const queryString = await this.objectToQueryString(videoParams);
-        const url = `${baseUrl}?${queryString}`;
-
+    
+        const url = this.baseUrl + "/videos"; // URL de destino
+    
         try {
-            let responseUrl = await this.makeHttpRequest(url, "GET", null, this.token);
-            // console.log(responseUrl);
-            // Array para armazenar os objetos com as URLs
-            const urlObjects = [];
-
-            // Adicione a responseUrl à estrutura desejada
+            const responseData = await this.makeHttpRequest(url, "POST", videoParams, this.token);
             const responseUrlObject = {
                 videos: []
             };
-
-            // Percorra o array de objetos e adicione cada objeto ao array urlObjects e também à estrutura responseUrlObject
-            responseUrl.forEach(item => {
-                if (item.url) {
-                    urlObjects.push({
-                        thumbnailUrl: item.thumbnailUrl,
-                        url: item.url,
-                        hora: item.formattedTime
-                    });
-
-                    // Adicione os mesmos dados à estrutura responseUrlObject
-                    responseUrlObject.videos.push({
-                        data: date.date,
-                        videoId: item.videoId,
-                        url: item.url,
-                        thumbnailUrl: item.thumbnailUrl,
-                        formattedTime: item.formattedTime
-                    });
-                }
-            });
-
-
-            // Exiba o array com os objetos
-            // console.log(responseUrlObject);
+    
+            if (Array.isArray(responseData)) {
+                // Processa os dados da resposta
+                responseData.forEach(item => {
+                    if (item.url) {
+                        const videoInfo = {
+                            data: date.date,
+                            videoId: item.videoId,
+                            url: item.url,
+                            thumbnailUrl: item.thumbnailUrl,
+                            formattedTime: item.formattedTime
+                        };
+    
+                        responseUrlObject.videos.push(videoInfo);
+                    }
+                });
+            }
+            
             return responseUrlObject;
-
         } catch (error) {
-            console.log('Erro na busca de videos:', data);
-
+            console.log('Erro na busca de videos:', error);
         }
     }
+    
 
     formatToISODate(date) {
         const year = date.getFullYear();
