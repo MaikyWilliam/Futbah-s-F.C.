@@ -1,6 +1,6 @@
 class HttpClient {
     constructor() {
-        this.baseUrl = 'https://server.meulance.net.br/website';
+        this.baseUrl = 'https://api.meulance.net.br/website'; 
     }
 
     async makeHttpRequest(url, method, data = null, authToken = null, headers = {}) {
@@ -70,6 +70,11 @@ class HttpClient {
 
 
     async postVideos() {
+        //Teste para pegar outros dias
+        // const date = new Date('08/01/2024');
+        // date.date = '2024-01-08';
+        // date.hour = '19';
+        
         // Obtém a data atual
         const date = this.getPreviousSaturday(new Date());
 

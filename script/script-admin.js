@@ -174,7 +174,7 @@ async function generateElencoTable() {
         const golsCell = createInputCell(jogador, "gol");
         const classificacaoCell = createInputCell(jogador, "classificacao");
         const assistenciasCell = createInputCell(jogador, "assistencia");
-        const desarmesCell = createInputCell(jogador, "desarmes");
+        // const desarmesCell = createInputCell(jogador, "desarmes");
 
         // Célula para mostrar a contagem de resultados (vitórias e empates)
         const resultadosCell = document.createElement("td");
@@ -192,7 +192,7 @@ async function generateElencoTable() {
         row.appendChild(classificacaoCell);
         row.appendChild(golsCell);
         row.appendChild(assistenciasCell);
-        row.appendChild(desarmesCell);
+        // row.appendChild(desarmesCell);
         resultadosCell.appendChild(adicionarVitoriaButton); // Adicione o botão +3 dentro da célula de resultados
         resultadosCell.appendChild(adicionarEmpateButton); // Adicione o botão +1 (Empate) dentro da célula de resultados
         row.appendChild(resultadosCell); // Adicione a célula de resultados à linha

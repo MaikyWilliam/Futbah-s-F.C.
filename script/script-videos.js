@@ -110,6 +110,7 @@ async function getVideosSite(httpClient) {
 async function initializeCarousel() {
     // Crie uma instância da classe HttpClient
     const httpClient = new HttpClient();
+    
     async function getVideos() {
         const videosData = recuperarComExpiracao("videos");
         if (videosData !== null) {
@@ -122,8 +123,26 @@ async function initializeCarousel() {
         return valor; // Retorna os vídeos buscados do site
     }
 
-
     const videosData = await getVideos();
+
+    // Encontre os elementos do carrossel e da loading
+    const carouselContainer = document.querySelector(".carousel-container");
+    const loading = document.querySelector(".loading");
+
+    // Verifique se há vídeos disponíveis
+    if (videosData.videos.length === 0) {
+        // Se não houver vídeos, exiba a loading e oculte o carrossel
+        loading.style.display = "block";
+        carouselContainer.style.display = "none";
+
+        // Chame a função para exibir a modal
+        showNoVideosModal();
+        return;
+    }
+
+    // Se houver vídeos, exiba o carrossel e oculte a loading
+    carouselContainer.style.display = "flex";
+    loading.style.display = "none";
 
     // Encontre o elemento do carrossel
     const carousel = document.querySelector(".carousel");
@@ -137,6 +156,23 @@ async function initializeCarousel() {
     // Inicialize o carrossel
     updateCarousel();
 }
+
+// Função para exibir a modal quando não houver vídeos
+function showNoVideosModal() {
+    // Adicione um ouvinte de evento para o botão de remover vídeos
+    const removeVideosButton = document.getElementById("removeVideosButton");
+    removeVideosButton.addEventListener("click", removeSavedVideos);
+}
+
+// Função para remover os vídeos salvos no localStorage
+function removeSavedVideos() {
+    localStorage.removeItem("videos");
+    location.reload();
+
+    // Chame a função para inicializar o carrossel novamente (se desejar)
+    initializeCarousel();
+}
+
 
 // Chame a função para inicializar o carrossel quando a página carregar
 window.addEventListener("load", initializeCarousel);

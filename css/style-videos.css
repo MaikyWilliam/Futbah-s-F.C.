@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column; /* Adicione esta linha para fazer com que os elementos se empilhem verticalmente */
     align-items: center;
+    display: none;
 }
 
 .carousel {
@@ -70,4 +71,42 @@
 #nextBtn:hover {
     background-color: rgba(0, 123, 255, 0.3);
     color: #0056b3;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8%;
+    background-color: #f8f9fa;
+    overflow: hidden; /* Impede que o conteúdo adicional gere uma barra de rolagem */
+}
+
+.loading-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loading p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #495057;
+}
+
+.loading button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.loading button:hover {
+    background-color: #0056b3;
 }
