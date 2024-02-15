@@ -68,55 +68,139 @@ class HttpClient {
         }
     }
 
-
     async postVideos() {
-        //Teste para pegar outros dias
-        // const date = new Date('08/01/2024');
-        // date.date = '2024-01-08';
-        // date.hour = '19';
-        
-        // Obtém a data atual
-        const date = this.getPreviousSaturday(new Date());
+        try {
+            // Passo 1: Login e obtenção do channelId
+            await this.login();
+            await this.postChannelId();
+            
+            //Teste para pegar outros dias
+            const date = new Date('13/02/2024');
+            date.date = '2024-02-13';
+            date.hour = '20';
 
+            // Obtém a data atual
+            // const date = this.getPreviousSaturday(new Date());
+    
+            // Passo 2: Cálculo das datas e horas de início e fim dos intervalos desejados
+            const startDate1 = new Date('2024-02-13T20:30:00');
+            const endDate1 = new Date('2024-02-13T21:00:00');
+    
+            const startDate2 = new Date('2024-02-13T21:00:00');
+            const endDate2 = new Date('2024-02-13T21:30:00');
+    
+            // Passo 3: Busca dos vídeos para cada intervalo desejado
+            const videosInInterval1 = await this.getVideosInInterval(startDate1, endDate1);
+            console.log(videosInInterval1)
+            const videosInInterval2 = await this.getVideosInInterval(startDate2, endDate2);
+            console.log(videosInInterval2)
+    
+            // Combinar os vídeos de ambos os intervalos
+            const allVideos = [...videosInInterval1, ...videosInInterval2];
+    
+            // Formatar os vídeos em um objeto de resposta
+            const responseUrlObject = {
+                videos: allVideos.map(item => ({
+                    data: date.date,
+                    videoId: item.videoId,
+                    url: item.url,
+                    thumbnailUrl: item.thumbnailUrl,
+                    formattedTime: item.formattedTime
+                }))
+            };
+    
+            // console.log(responseUrlObject); // Mostra os vídeos encontrados
+            return responseUrlObject; // Retorna os vídeos encontrados
+        } catch (error) {
+            console.log('Erro na busca de vídeos:', error); // Manipula erros de requisição
+            return [];
+        }
+    }
+    
+    async getVideosInInterval(startDate, endDate) {
         const videoParams = {
             state: 'RS',
             city: 'Estância Velha',
             establishmentName: 'FUTHAUS7 É US GURI',
             channelId: this.channelId,
-            day: date.date, 
-            hour: date.hour
+            day: this.formatToISODate(startDate),
+            hour: startDate.getHours().toString() // Utiliza apenas a hora inicial do intervalo
         };
     
         const url = this.baseUrl + "/videos"; // URL de destino
     
         try {
             const responseData = await this.makeHttpRequest(url, "POST", videoParams, this.token);
-            const responseUrlObject = {
-                videos: []
-            };
-    
-            if (Array.isArray(responseData)) {
-                // Processa os dados da resposta
-                responseData.forEach(item => {
-                    if (item.url) {
-                        const videoInfo = {
-                            data: date.date,
-                            videoId: item.videoId,
-                            url: item.url,
-                            thumbnailUrl: item.thumbnailUrl,
-                            formattedTime: item.formattedTime
-                        };
-    
-                        responseUrlObject.videos.push(videoInfo);
-                    }
-                });
-            }
+            // console.log(responseData);
+            // Filtra os vídeos para encontrar aqueles dentro do intervalo de horário desejado
+            const videosInInterval = responseData.filter(item => {
+                // Extraia o tempo formatado
+                const videoTime = new Date(`2024-02-13T${item.formattedTime}`); // A data '1970-01-01' é apenas um marcador, pois você está interessado apenas no tempo
             
-            return responseUrlObject;
+                // Compare videoTime com startDate e endDate
+                return videoTime >= startDate && videoTime < endDate;
+            });
+            
+            return videosInInterval;
         } catch (error) {
-            console.log('Erro na busca de videos:', error);
+            console.log('Erro na busca de vídeos:', error); // Manipula erros de requisição
+            return [];
         }
     }
+
+
+    // async postVideos() {
+    //     // Passo 1: Login e obtenção do channelId
+    //     await this.login();
+    //     await this.postChannelId();
+
+    //     //Teste para pegar outros dias
+    //     // const date = new Date('13/02/2024');
+    //     // date.date = '2024-02-13';
+    //     // date.hour = '20';
+        
+    //     // Obtém a data atual
+    //     const date = this.getPreviousSaturday(new Date());
+
+    //     const videoParams = {
+    //         state: 'RS',
+    //         city: 'Estância Velha',
+    //         establishmentName: 'FUTHAUS7 É US GURI',
+    //         channelId: this.channelId,
+    //         day: date.date, 
+    //         hour: date.hour
+    //     };
+    
+    //     const url = this.baseUrl + "/videos"; // URL de destino
+    
+    //     try {
+    //         const responseData = await this.makeHttpRequest(url, "POST", videoParams, this.token);
+    //         const responseUrlObject = {
+    //             videos: []
+    //         };
+    
+    //         if (Array.isArray(responseData)) {
+    //             // Processa os dados da resposta
+    //             responseData.forEach(item => {
+    //                 if (item.url) {
+    //                     const videoInfo = {
+    //                         data: date.date,
+    //                         videoId: item.videoId,
+    //                         url: item.url,
+    //                         thumbnailUrl: item.thumbnailUrl,
+    //                         formattedTime: item.formattedTime
+    //                     };
+    
+    //                     responseUrlObject.videos.push(videoInfo);
+    //                 }
+    //             });
+    //         }
+            
+    //         return responseUrlObject;
+    //     } catch (error) {
+    //         console.log('Erro na busca de videos:', error);
+    //     }
+    // }
     
 
     formatToISODate(date) {

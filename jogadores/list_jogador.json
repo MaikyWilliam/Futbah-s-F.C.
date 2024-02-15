@@ -8,7 +8,7 @@
       "img": "images/elenco/Maiky-vermelho.jpeg",
       "classificacao": "6",
       "gol": "1",
-      "assistencia": "1",
+      "assistencia": "2",
       "campeao": {
         "class": "campeao",
         "qtd": 2,
@@ -24,9 +24,9 @@
       "posicao": "Meia",
       "numero": "10",
       "img": "images/elenco/Jonas-vermelho.jpeg",
-      "classificacao": "6",
-      "gol": "5",
-      "assistencia": "7",
+      "classificacao": "9",
+      "gol": "7",
+      "assistencia": "9",
       "campeao": {
         "class": "campeao",
         "qtd": 3,
@@ -43,7 +43,7 @@
       "posicao": "Zagueiro",
       "numero": "16",
       "img": "images/elenco/Lucas Dieckel-azul.jpeg",
-      "classificacao": 3,
+      "classificacao": 6,
       "gol": "1",
       "assistencia": "0",
       "campeao": {
@@ -73,7 +73,7 @@
       "posicao": "Goleiro",
       "numero": "01",
       "img": "images/elenco/Daniel da Silva.jpeg",
-      "classificacao": "6",
+      "classificacao": "9",
       "gol": "0",
       "assistencia": "0",
       "campeao": {
@@ -89,7 +89,7 @@
       "numero": "4",
       "img": "images/elenco/Lucas Trindade.jpg",
       "classificacao": 3,
-      "gol": "2",
+      "gol": "3",
       "assistencia": "1",
       "campeao": {
         "class": "nao",
@@ -119,8 +119,8 @@
       "numero": "5",
       "img": "images/elenco/Luis Henrique.jpg",
       "classificacao": 0,
-      "gol": "2",
-      "assistencia": "2",
+      "gol": "3",
+      "assistencia": "4",
       "campeao": {
         "class": "nao",
         "qtd": 0,
@@ -134,7 +134,7 @@
       "numero": "5",
       "img": "images/elenco/default.jpeg",
       "classificacao": 0,
-      "gol": "1",
+      "gol": "2",
       "assistencia": "2",
       "campeao": {
         "class": "nao",
@@ -208,9 +208,9 @@
       "posicao": "Meia",
       "numero": "5",
       "img": "images/elenco/Lucas.jpg",
-      "classificacao": 0,
-      "gol": "5",
-      "assistencia": "2",
+      "classificacao": 3,
+      "gol": "7",
+      "assistencia": "3",
       "campeao": {
         "class": "nao",
         "qtd": 0,
@@ -253,9 +253,9 @@
       "posicao": "Meia",
       "numero": "8",
       "img": "images/elenco/Cleverson.jpg",
-      "classificacao": 0,
+      "classificacao": 3,
       "gol": "2",
-      "assistencia": "0",
+      "assistencia": "2",
       "campeao": {
         "class": "nao",
         "qtd": 0,
@@ -300,7 +300,7 @@
       "img": "images/elenco/default.jpeg",
       "classificacao": 6,
       "gol": "5",
-      "assistencia": "3",
+      "assistencia": "4",
       "campeao": {
         "class": "nao",
         "qtd": 0,
@@ -313,8 +313,8 @@
       "posicao": "Zagueiro",
       "numero": "00",
       "img": "images/elenco/default.jpeg",
-      "classificacao": 3,
-      "gol": "1",
+      "classificacao": 6,
+      "gol": "2",
       "assistencia": "1",
       "campeao": {
         "class": "nao",
